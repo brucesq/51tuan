@@ -31,6 +31,7 @@ public class LashouParser implements ArticleParser{
 		String content = IoUtils.pipe(in, "utf-8");
 		
 		Article article = new Article();
+		article.setUrl(htmlurl);
 		article.setCategoryId(1);
 		article.setCityId(cityId);
 		article.setEndTime(new Date());
@@ -112,7 +113,7 @@ public class LashouParser implements ArticleParser{
 						index= content.indexOf("\"");
 						String url = content.substring(0,index);
 						System.out.println(url);
-						article.setUrl(url);
+						article.setImgurl(url);
 					}
 				}
 			}

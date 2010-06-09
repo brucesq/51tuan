@@ -1,0 +1,45 @@
+<div class="center_title_bar">最新团购信息</div>
+    #foreach( $article in $newList )
+    	<div class="prod_box">
+        	<div class="top_prod_box"></div>
+            <div class="center_prod_box">            
+                 <div class="product_title"><a href="${article.url}">${article.name}</a></div>
+                 <div class="product_img"><a href="${article.url}"><img src="${article.imgurl}" alt="" title="" border="0" width="100"/></a></div>
+                 <div class="prod_price"><span class="reduce">¥${article.originalPrice}</span> <span class="price">¥${article.nowPrice}</span></div>                        
+            </div>
+            <div class="bottom_prod_box"></div>             
+            <div class="prod_details_tab">
+            <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" title="" border="0" class="left_bt" /></a>
+            <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" title="" border="0" class="left_bt" /></a>
+            <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" title="" border="0" class="left_bt" /></a>           
+            <a href="${article.url}" class="prod_details">details</a>            
+            </div>                     
+        </div>
+    #end
+    
+ 
+ 
+ 
+ <div class="center_title_bar">精品推荐</div>
+ 
+  #foreach( $article in $recommendedList )
+      	<div class="prod_box">
+        	<div class="top_prod_box"></div>
+            <div class="center_prod_box">            
+                 <div class="product_title"><a href="${article.url}">${article.name}</a></div>
+                 <div class="product_img"><a href="${article.url}"><img src="${article.imgurl}" alt="" title="" border="0" width="100"/></a></div>
+                 <div class="prod_price"><span class="reduce">¥${article.originalPrice}</span> <span class="price">¥${article.nowPrice}</span></div>                        
+            </div>
+            <div class="bottom_prod_box"></div>             
+            <div class="prod_details_tab">
+            <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" title="" border="0" class="left_bt" /></a>
+            <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" title="" border="0" class="left_bt" /></a>
+            <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" title="" border="0" class="left_bt" /></a>           
+            <a href="${article.url}" class="prod_details">details</a>            
+            </div>                     
+        </div>
+    
+  #end
+    
+ 
+    
