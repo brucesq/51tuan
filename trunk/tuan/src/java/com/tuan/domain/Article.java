@@ -40,6 +40,8 @@ public class Article {
 	private Integer voteNum;
 	
 	private Integer olderNum;
+	
+	private String imgurl;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -155,6 +157,14 @@ public class Article {
 
 	public void setOlderNum(Integer olderNum) {
 		this.olderNum = olderNum;
+	}
+	@Column(name = "img_url")
+	public String getImgurl() {
+		return imgurl;
+	}
+
+	public void setImgurl(String imgurl) {
+		this.imgurl = imgurl;
 	}
 	
 	
