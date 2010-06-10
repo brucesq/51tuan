@@ -1,4 +1,4 @@
-package com.tuan.web.framework.ajax.action;
+package com.tuan.web.action;
 
 import java.io.IOException;
 import java.util.ArrayList;

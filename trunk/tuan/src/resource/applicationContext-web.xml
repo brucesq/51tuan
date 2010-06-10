@@ -15,6 +15,6 @@
 	 </bean> 
 	 
 	
-  	 <bean id="getArticleListAction" class="com.tuan.web.framework.ajax.action.GetArticleListAction" /> 
+  	 <bean id="getArticleListAction" class="com.tuan.web.action.GetArticleListAction" /> 
   	 
 </beans>
