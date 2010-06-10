@@ -8,11 +8,11 @@ import java.util.TreeMap;
 
 /**
  * @author sunquanzhi
- *
+ * 
  */
 public class Constants {
-	// 北京  上海  深圳  广州  南京  大庆  南昌  合肥  福州  郑州  大连  西安  
-	private static Map<String, Integer> CITY_ID = new TreeMap<String, Integer>();
+	// 北京 上海 深圳 广州 南京 大庆 南昌 合肥 福州 郑州 大连 西安
+	public static Map<String, Integer> CITY_ID = new TreeMap<String, Integer>();
 	static {
 		CITY_ID.put("全国", 0);
 		CITY_ID.put("北京", 1);
@@ -29,5 +29,13 @@ public class Constants {
 		CITY_ID.put("西安", 12);
 	}
 
-	
+	public static Map<String, Integer> FROM_ID = new TreeMap<String, Integer>();
+	static {
+		FROM_ID.put("拉手网", 0);
+	}
+	public static Map<String, String> FROM_PARSER = new TreeMap<String, String>();
+	static {
+		FROM_PARSER.put("拉手网", "lashouParser");
+	}
+
 }
