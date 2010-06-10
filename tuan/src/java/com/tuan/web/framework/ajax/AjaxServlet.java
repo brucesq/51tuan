@@ -57,6 +57,7 @@ public class AjaxServlet extends BaseServlet {
         	AjaxAction command = getAction(request.getSession().getServletContext(),actionName);
         	if(command == null)
         		throw new WebException("Unrecognised command received: " + actionName);
+        	System.out.println("ex:"+actionName);
         	command.execute(request, response);
         }catch(Exception e){
         	handleError(response,e);
@@ -81,6 +82,9 @@ public class AjaxServlet extends BaseServlet {
 	 * @throws Exception
 	 */
 	protected void handleError(HttpServletResponse response, Exception cause){  
+		cause.printStackTrace();
+		System.out.println("asdasderrot");
+		
 		//If response is not committed.
 		if (!response.isCommitted()){
 	         if (LOG.isDebugEnabled()){
