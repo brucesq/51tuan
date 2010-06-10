@@ -7,8 +7,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.WebApplicationContextUtils;
+import com.tuan.domain.User;
 
 //import com.banckle.email.services.User;
 //import com.banckle.email.web.services.AuthenticationService;
@@ -58,10 +57,10 @@ public final class AuthenticationHelper {
 	  * @param res
 	  * @param user
 	  */
-//	 public static void setCurrentUser(HttpServletRequest req,HttpServletResponse res,User user){
-//		 req.getSession().setAttribute(AUTHENTICATION_USER, user);
-//		 setUsernameCookie(req,res,user.getUserName());
-//	 }
+	 public static void setCurrentUser(HttpServletRequest req,HttpServletResponse res,User user){
+		 req.getSession().setAttribute(AUTHENTICATION_USER, user);
+		 setUsernameCookie(req,res,user.getName());
+	 }
 	 /**
 	    * Helper to return the banckle auth cookie. The cookie saves the last used username value.
 	    * 

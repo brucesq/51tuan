@@ -14,7 +14,9 @@
 	 	</property>
 	 </bean> 
 	 
+	  <bean id="authService" class="com.tuan.service.impl.AuthenticationServiceImpl" /> 
 	
   	 <bean id="getArticleListAction" class="com.tuan.web.action.GetArticleListAction" /> 
+  	 <bean id="loginAction" class="com.tuan.web.action.admin.LoginAction" /> 
   	 
 </beans>
