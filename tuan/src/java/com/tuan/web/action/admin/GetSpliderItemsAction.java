@@ -20,7 +20,7 @@ import com.tuan.web.framework.ajax.BaseAction;
  * @author sunquanzhi
  *
  */
-public class GetArticleItemsAction  extends BaseAction {
+public class GetSpliderItemsAction  extends BaseAction {
 	
 	private SpliderService spliderService;
 
@@ -30,7 +30,7 @@ public class GetArticleItemsAction  extends BaseAction {
 
 	@Override
 	public String getTemplatePath() {
-		return "GetArticleItemsAction.xml"; 
+		return "admin/GetSpliderItemsAction.json"; 
 	}
 
 	@Override

@@ -19,6 +19,6 @@
   	 <bean id="getArticleListAction" class="com.tuan.web.action.GetArticleListAction" /> 
   	 <bean id="loginAction" class="com.tuan.web.action.admin.LoginAction" /> 
   	 
-  	 <bean id="getItemsAction" class="com.tuan.web.action.admin.GetArticleItemsAction" /> 
+  	 <bean id="getSpliderItemsAction" class="com.tuan.web.action.admin.GetSpliderItemsAction" /> 
   	 
 </beans>
