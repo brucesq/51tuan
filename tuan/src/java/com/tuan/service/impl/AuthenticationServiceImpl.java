@@ -22,4 +22,14 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 		}
 		throw new AuthenticationException("ÓÃ»§ÃûÃÜÂë´íÎó");
 	}
+	
+	public User getUser(String username){
+		if(username.equals("admin")){
+			User user = new User();
+			user.setName(username);
+			user.setPassword("123456");
+			return user;
+		}
+		return null;
+	}
 }
