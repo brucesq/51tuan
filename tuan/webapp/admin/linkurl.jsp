@@ -1,3 +1,5 @@
+<%@ page pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ page import="com.tuan.domain.Constants" %>
 <div style="font-size:12px;">
    链接地址信息管理<br/>
@@ -8,15 +10,15 @@
 <input type="BUTTON" id="bedata" value="Edit Selected" />
 <script type="text/javascript">
 jQuery("#editgrid").jqGrid({        
-   	url:'../ajax/getItems?q=1',
+   	url:'../ajax/getSpliderItems?q=1',
 	datatype: "json",
-	colNames:['编号','姓名','密码','年龄','地址','出生日期'],    
+	colNames:['编号','来源','城市','解析器','地址','日期'],    
 	colModel:[    
 	{name:'id',index:'id', width:90,sorttype:"int"},    
-	{name:'username',index:'name', width:110},    
-	{name:'password',index:'password', width:80,editable:true,edittype:"select",editoptions:{value:"<%= Constants.getCityString() %>"}},    
-	{name:'age',index:'age', width:80},      
-	{name:'address',index:'address', width:80},     
+	{name:'from',index:'from', width:80,editable:true,edittype:"select",editoptions:{value:"<%= Constants.getFromNameString() %>"}},    
+	{name:'city',index:'city', width:80,editable:true,edittype:"select",editoptions:{value:"<%= Constants.getCityString() %>"}},    
+	{name:'parser',index:'parser', width:80,editable:true,edittype:"select",editoptions:{value:"<%= Constants.getParserNameString() %>"}},      
+	{name:'url',index:'url', width:80,editable:true},     
 	{name:'time',index:'time', width:80,sorttype:"date"}      
 	 ],    
    	rowNum:5,
