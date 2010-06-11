@@ -1,0 +1,11 @@
+{"dataRows":[
+#foreach( $article in $list )
+{"id":${article.id},"password":"${article.cityName}","address":"${article.url}","username":"${article.zhParserName}","age":"${article.fromName}"}
+#if(${velocityCount} < $list.size())
+,
+#end
+#end
+],"page":${currentPage},"rows":${records},"total":${totalPage}}  
+
+
+  

@@ -3,12 +3,16 @@
  */
 package com.tuan.domain;
 
+import java.util.Map;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
 
 /**
  * @author sunquanzhi
@@ -82,5 +86,34 @@ public class SpliderItem {
 		this.fromId = fromId;
 	}
 	
+	@Transient
+	public String getCityName() {
+		for (Map.Entry<String, Integer> entry : Constants.CITY_ID.entrySet()) {
+			if (entry.getValue().equals(cityId)) {
+				System.out.println(entry.getKey()+":"+cityId);
+				return entry.getKey();
+			}
+		}
+		return "";
+	}
 	
+	@Transient
+	public String getFromName() {
+		for (Map.Entry<String, Integer> entry : Constants.FROM_ID.entrySet()) {
+			if (entry.getValue().equals(fromId)) {
+				return entry.getKey();
+			}
+		}
+		return "";
+	}
+	
+	@Transient
+	public String getZhParserName() {
+		for (Map.Entry<String, String> entry : Constants.FROM_PARSER.entrySet()) {
+			if (entry.getValue().equals(parserName)) {
+				return entry.getKey();
+			}
+		}
+		return "";
+	}
 }

@@ -7,7 +7,11 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
+
 import com.tuan.domain.User;
+import com.tuan.service.AuthenticationService;
 
 //import com.banckle.email.services.User;
 //import com.banckle.email.web.services.AuthenticationService;
@@ -37,20 +41,20 @@ public final class AuthenticationHelper {
 	  * @param req
 	  * @return
 	  */
-//	 public static User getCurrentUser(HttpServletRequest req){
-//		 User user = (User)req.getSession().getAttribute(AUTHENTICATION_USER);
-//		 if(user == null){
-//			 Cookie authCookie = getAuthCookie(req);
-//			 if(authCookie != null){
-//				 String username = authCookie.getValue();
-//				 WebApplicationContext wc = WebApplicationContextUtils.getRequiredWebApplicationContext(req.getSession().getServletContext()); 
-//				 AuthenticationService authService = (AuthenticationService)wc.getBean(AUTHENTICATION_SERVICE);
-//				 user = authService.getUser(username);
-//				 req.getSession().setAttribute(AUTHENTICATION_USER, user);
-//			 }
-//		 }
-//		 return user;
-//	 }
+	 public static User getCurrentUser(HttpServletRequest req){
+		 User user = (User)req.getSession().getAttribute(AUTHENTICATION_USER);
+		 if(user == null){
+			 Cookie authCookie = getAuthCookie(req);
+			 if(authCookie != null){
+				 String username = authCookie.getValue();
+				 WebApplicationContext wc = WebApplicationContextUtils.getRequiredWebApplicationContext(req.getSession().getServletContext()); 
+				 AuthenticationService authService = (AuthenticationService)wc.getBean(AUTHENTICATION_SERVICE);
+				 user = authService.getUser(username);
+				 req.getSession().setAttribute(AUTHENTICATION_USER, user);
+			 }
+		 }
+		 return user; 
+	 }
 	 /**
 	  * Set current user,session and cookie.
 	  * @param req

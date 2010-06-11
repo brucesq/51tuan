@@ -6,36 +6,65 @@ package com.tuan.domain;
 import java.util.Map;
 import java.util.TreeMap;
 
+import com.tuan.util.PropertiesReaderUtil;
+
 /**
  * @author sunquanzhi
  * 
  */
 public class Constants {
-	// 北京 上海 深圳 广州 南京 大庆 南昌 合肥 福州 郑州 大连 西安
+
 	public static Map<String, Integer> CITY_ID = new TreeMap<String, Integer>();
 	static {
-		CITY_ID.put("全国", 0);
-		CITY_ID.put("北京", 1);
-		CITY_ID.put("上海", 2);
-		CITY_ID.put("深圳", 3);
-		CITY_ID.put("广州", 4);
-		CITY_ID.put("南京", 5);
-		CITY_ID.put("大庆", 6);
-		CITY_ID.put("南昌", 7);
-		CITY_ID.put("合肥", 8);
-		CITY_ID.put("福州", 9);
-		CITY_ID.put("郑州", 10);
-		CITY_ID.put("大连", 11);
-		CITY_ID.put("西安", 12);
+		String citystr = PropertiesReaderUtil.getInstance("constants.properties").getProperty("CITY_ID");
+		String[] citys = citystr.split(";");
+		for(String city : citys){
+			String[] kv = city.split(":");
+			CITY_ID.put(kv[0], Integer.parseInt(kv[1]));
+		}
+	}
+	
+	public static String getCityString(){
+		StringBuilder builder = new StringBuilder();
+		for(Map.Entry<String, Integer> entry : CITY_ID.entrySet()){
+			builder.append(";");
+			builder.append(entry.getValue());
+			builder.append(":");
+			builder.append(entry.getKey());
+		}
+		System.out.println(builder.toString());
+		return builder.toString().substring(1);
+	}
+	
+	public static String getParserNameString(){
+		StringBuilder builder = new StringBuilder();
+		for(Map.Entry<String, String> entry : FROM_PARSER.entrySet()){
+			builder.append(";");
+			builder.append(entry.getValue());
+			builder.append(":");
+			builder.append(entry.getKey());
+		}
+		return builder.toString().substring(1);
+	}
+	
+	public static String getFromNameString(){
+		StringBuilder builder = new StringBuilder();
+		for(Map.Entry<String, Integer> entry : FROM_ID.entrySet()){
+			builder.append(";");
+			builder.append(entry.getValue());
+			builder.append(":");
+			builder.append(entry.getKey());
+		}
+		return builder.toString().substring(1);
 	}
 
 	public static Map<String, Integer> FROM_ID = new TreeMap<String, Integer>();
 	static {
-		FROM_ID.put("拉手网", 0);
+		FROM_ID.put("鎷夋墜", 0);
 	}
 	public static Map<String, String> FROM_PARSER = new TreeMap<String, String>();
 	static {
-		FROM_PARSER.put("拉手网", "lashouParser");
+		FROM_PARSER.put("鎷夋墜", "lashouParser");
 	}
 
 }
