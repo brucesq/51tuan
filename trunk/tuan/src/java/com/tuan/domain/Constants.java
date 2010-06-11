@@ -32,7 +32,6 @@ public class Constants {
 			builder.append(":");
 			builder.append(entry.getKey());
 		}
-		System.out.println(builder.toString());
 		return builder.toString().substring(1);
 	}
 	
@@ -60,11 +59,21 @@ public class Constants {
 
 	public static Map<String, Integer> FROM_ID = new TreeMap<String, Integer>();
 	static {
-		FROM_ID.put("拉手", 0);
+		String fromstr = PropertiesReaderUtil.getInstance("constants.properties").getProperty("FROM_ID");
+		String[] froms = fromstr.split(";");
+		for(String from : froms){
+			String[] kv = from.split(":");
+			FROM_ID.put(kv[0], Integer.parseInt(kv[1]));
+		}
 	}
 	public static Map<String, String> FROM_PARSER = new TreeMap<String, String>();
 	static {
-		FROM_PARSER.put("拉手", "lashouParser");
+		String fromstr = PropertiesReaderUtil.getInstance("constants.properties").getProperty("FROM_PARSER");
+		String[] froms = fromstr.split(";");
+		for(String from : froms){
+			String[] kv = from.split(":");
+			FROM_PARSER.put(kv[0], kv[1]);
+		}
 	}
 
 }
