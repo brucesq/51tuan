@@ -23,4 +23,16 @@ public interface SpliderService {
 	public List<Article> getArticleList(int pageNo, int pageSize,
 			String orderBy, boolean isAsc,
 			Collection<HibernateExpression> expressions);
+	
+	public List<SpliderItem> getSpliderItem(int pageNo, int pageSize,
+			String orderBy, boolean isAsc,
+			Collection<HibernateExpression> expressions);
+	
+	public Long getSpliderItemCount(Collection<HibernateExpression> expressions);
+	
+	public SpliderItem getSpliderItem(Integer id);
+	
+	public void addSpliderItem(SpliderItem item);
+	
+	public void editSpliderItem(SpliderItem item);
 }

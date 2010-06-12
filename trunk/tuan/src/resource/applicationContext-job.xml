@@ -42,10 +42,12 @@
 	<bean id="spliderJobTrigger"
 		class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="spliderJob" />
-		<property name="cronExpression" value="0 0 9 * * ?" />
+		<property name="cronExpression" value="0 35 15 * * ?" />
 	</bean>
 
 
-<bean id="lashouParser" class="com.tuan.splider.LashouParser" />
+<bean id="lashouParser" class="com.tuan.splider.parser.LashouParser" />
+
+<bean id="meituanParser" class="com.tuan.splider.parser.MeituanParser" />
 
 </beans>

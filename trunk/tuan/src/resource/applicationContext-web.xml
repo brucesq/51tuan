@@ -20,5 +20,5 @@
   	 <bean id="loginAction" class="com.tuan.web.action.admin.LoginAction" /> 
   	 
   	 <bean id="getSpliderItemsAction" class="com.tuan.web.action.admin.GetSpliderItemsAction" /> 
-  	 
+  	 <bean id="editSpliderItemAction" class="com.tuan.web.action.admin.EditSpliderItemAction" /> 
 </beans>

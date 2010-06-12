@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tuan.splider;
+package com.tuan.splider.parser;
 
 import java.io.InputStream;
 import java.net.URL;
@@ -9,8 +9,11 @@ import java.net.URLConnection;
 import java.util.Date;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
 
+import com.hunthawk.reader.enhance.util.ToolDateUtil;
 import com.tuan.domain.Article;
+import com.tuan.splider.ArticleParser;
 import com.tuan.util.IoUtils;
 
 /**
@@ -34,7 +37,13 @@ public class LashouParser implements ArticleParser{
 		article.setUrl(htmlurl);
 		article.setCategoryId(1);
 		article.setCityId(cityId);
-		article.setEndTime(new Date());
+		
+		Date date = new Date();
+		date = DateUtils.addDays(date, 1);
+		String strDate = ToolDateUtil.dateToString(date, "yyyyMMdd");
+		date = ToolDateUtil.stringToDate(strDate, "yyyyMMdd");
+		
+		article.setEndTime(date);
 		article.setFromId(fromId);
 		parserContent(content,article);
 		return article;
@@ -42,7 +51,6 @@ public class LashouParser implements ArticleParser{
 	
 	public static void parserContent(String content,Article article){
 		int index = content.indexOf("class=\"mid\"");
-		article.setEndTime(new Date());
 		if(index > 0 ){
 			content = content.substring(index+12);
 			index = content.indexOf("<h1>");
@@ -121,7 +129,7 @@ public class LashouParser implements ArticleParser{
 	}
 	
 	private static String getPrice(String str){
-		int index = str.indexOf("£¤");
+		int index = str.indexOf("ï¿¥");
 		if(index >= 0){
 			str = str.substring(index+1);
 			String price = "";
@@ -129,7 +137,7 @@ public class LashouParser implements ArticleParser{
 				if(StringUtils.isNumeric(""+str.charAt(i))){
 					price += str.charAt(i);
 				}else{
-					break;
+					continue;
 				}
 			}
 			str = price;
@@ -138,32 +146,7 @@ public class LashouParser implements ArticleParser{
 	}
 	
 	public static void main(String[] args){
-		String content = "<div class=\"mid\">"+
-		 " <h1>½ñÈÕÍÅ¹º: ½öÊÛ49Ôª£¡Ô­¼Û188ÔªµÄ¡°ÂêÑÅµ°¸âDIY½ÌÊÒ¡±ÖÆ×÷¾Å¿Å×°ÔìĞÍÇÉ¿ËÁ¦ÀñºĞÒ»ºĞ</h1>"+
-		 " <div class=\"dealinfo\">"+
-		 "   <div class=\"l deal_l\">"+
-		"	  <div class=\"buybox\">"+
-			" <div class=\"buy\">"+
-
-		 " <div class=\"l price\" style=\"text-align:center;font-size:30px;\">"+
-		  	"			  £¤49				  				  </div>"+
-		  	"																				<a href=\"buy.php?id=307\"><div class=\"r btn_buy\"></div></a>"+
-								"							  					</div>"+
-		"<div class=\"shuzi\">"+
-		" <ul>"+
-	    "<li>Ô­¼Û<br /><h4 title=\"188.00\">£¤188</h4></li>"+
-
-	    "<li>ÕÛ¿Û<br /><h3>2.6ÕÛ</h3></li>"+
-		"<li class=\"red\">½ÚÊ¡<br /><h3>£¤139</h3></li>"+
-	 " </ul>"+
-	"</div>"+
-	"<div class=\"r deal_r\">"+
-	"  <div class=\"image\">"+
-	 " <img src=\"http://img.lashou.com/lasho_pic/go/00/00/00/03/307\" />"
-;
-
 		
-//		parserContent(content);
 
 	}
 }
