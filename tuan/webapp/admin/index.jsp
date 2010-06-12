@@ -1,3 +1,5 @@
+<%@ page pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ page import="com.tuan.web.framework.AuthenticationHelper" %>
 <%@ page import="com.tuan.domain.User" %>
 <%
