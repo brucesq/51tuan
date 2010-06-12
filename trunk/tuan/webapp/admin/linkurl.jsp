@@ -8,6 +8,7 @@
 <table id="editgrid"></table>
 <div id="pagered"></div>
 <input type="BUTTON" id="bedata" value="Edit Selected" />
+<input type="BUTTON" id="bedata1" value="Add" />
 <script type="text/javascript">
 jQuery("#editgrid").jqGrid({        
    	url:'../ajax/getSpliderItems?q=1',
@@ -32,12 +33,15 @@ jQuery("#editgrid").jqGrid({
          repeatitems : false    
       },    
     caption:"Editing Example",
-    editurl:"someurl.php"
+    editurl:"../ajax/editSpliderItem"
 });
 $("#bedata").click(function(){
 	var gr = jQuery("#editgrid").jqGrid('getGridParam','selrow');
-	if( gr != null ) jQuery("#editgrid").jqGrid('editGridRow',gr,{height:280,reloadAfterSubmit:false});
+	if( gr != null ) jQuery("#editgrid").jqGrid('editGridRow',gr,{height:280,reloadAfterSubmit:true});
 	else alert("Please Select Row");
+});
+$("#bedata1").click(function(){
+	jQuery("#editgrid").jqGrid('editGridRow',"new",{height:280,reloadAfterSubmit:true});
 });
 </script>
 <br /><br />
