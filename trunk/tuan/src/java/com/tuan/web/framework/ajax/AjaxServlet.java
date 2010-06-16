@@ -37,7 +37,6 @@ public class AjaxServlet extends BaseServlet {
 	protected void service(final HttpServletRequest request, 
             final HttpServletResponse response)
 			throws ServletException, IOException{
-		System.out.println("asdasd");
 		long startTime = 0;
 		if(LOG.isDebugEnabled()){
 			startTime = System.currentTimeMillis();
@@ -57,7 +56,7 @@ public class AjaxServlet extends BaseServlet {
         	AjaxAction command = getAction(request.getSession().getServletContext(),actionName);
         	if(command == null)
         		throw new WebException("Unrecognised command received: " + actionName);
-        	System.out.println("ex:"+actionName);
+//        	System.out.println("ex:"+actionName);
         	command.execute(request, response);
         }catch(Exception e){
         	handleError(response,e);

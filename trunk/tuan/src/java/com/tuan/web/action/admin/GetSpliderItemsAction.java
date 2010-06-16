@@ -44,8 +44,8 @@ public class GetSpliderItemsAction  extends BaseAction {
 //			String s = (String)eu.nextElement();
 //			System.out.println(s+":"+request.getParameter(s));
 //		}
-		List<SpliderItem> list = spliderService.getSpliderItem(page,5,"id",false,new ArrayList());
-		int totalPage = spliderService.getSpliderItemCount(new ArrayList()).intValue()/5 +1;
+		List<SpliderItem> list = spliderService.getSpliderItem(page,50,"id",false,new ArrayList());
+		int totalPage = spliderService.getSpliderItemCount(new ArrayList()).intValue()/50 +1;
 		Map<String, Object> map = new HashMap<String,Object>(); 
 		map.put("list", list);
 		map.put("currentPage",page);

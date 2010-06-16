@@ -58,7 +58,7 @@ public class MeituanParser  implements ArticleParser{
 				content = content.substring(index+4);
 				index = content.indexOf("</h1>");
 				String title  = content.substring(0,index);
-				System.out.println(title);
+//				System.out.println(title);
 				article.setName(title);
 			}
 				
@@ -73,7 +73,7 @@ public class MeituanParser  implements ArticleParser{
 				String nowPrice  = content.substring(0,index);
 				content = content.substring(index+9);
 				nowPrice = getPrice(nowPrice);
-				System.out.println(nowPrice);
+//				System.out.println(nowPrice);
 				article.setNowPrice(nowPrice);
 				index = content.indexOf("class=\"deal-discount\"");
 				if(index > 0){
@@ -86,7 +86,7 @@ public class MeituanParser  implements ArticleParser{
 						index = content.indexOf("</td>");
 						String oldPrice  = content.substring(0,index);
 						oldPrice = getPrice(oldPrice);
-						System.out.println(oldPrice);
+//						System.out.println(oldPrice);
 						article.setOriginalPrice(oldPrice);
 						
 					}
@@ -95,7 +95,7 @@ public class MeituanParser  implements ArticleParser{
 						content = content.substring(index+4);
 						index = content.indexOf("</td>");
 						String discount  = content.substring(0,index);
-						System.out.println(discount);
+//						System.out.println(discount);
 						article.setDiscount(discount);
 						
 					}
@@ -106,7 +106,7 @@ public class MeituanParser  implements ArticleParser{
 						index = content.indexOf("</td>");
 						String saveMoney  = content.substring(0,index);
 						saveMoney = getPrice(saveMoney);
-						System.out.println(saveMoney);
+//						System.out.println(saveMoney);
 						article.setSaveMoney(saveMoney);
 						
 					}
@@ -117,7 +117,7 @@ public class MeituanParser  implements ArticleParser{
 						content = content.substring(index+5);
 						index= content.indexOf("\"");
 						String url = content.substring(0,index);
-						System.out.println("http://www.meituan.com"+url);
+//						System.out.println("http://www.meituan.com"+url);
 						article.setImgurl("http://www.meituan.com"+url);
 					}
 				}

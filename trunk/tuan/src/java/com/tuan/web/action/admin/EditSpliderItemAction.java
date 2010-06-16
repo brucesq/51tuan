@@ -30,11 +30,11 @@ public class EditSpliderItemAction implements AjaxAction{
 	
 	public void execute(HttpServletRequest request, HttpServletResponse response) 
     throws ServletException, IOException{
-		Enumeration eu =  request.getParameterNames();
-		while(eu.hasMoreElements()){	
-			String s = (String)eu.nextElement();
-			System.out.println(s+":"+request.getParameter(s));
-		}
+//		Enumeration eu =  request.getParameterNames();
+//		while(eu.hasMoreElements()){	
+//			String s = (String)eu.nextElement();
+//			System.out.println(s+":"+request.getParameter(s));
+//		}
 		String oper = request.getParameter("oper");
 		String id =request.getParameter("id");
 		String url = request.getParameter("url");

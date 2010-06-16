@@ -57,6 +57,6 @@ public abstract class BaseAction implements AjaxAction {
 		PrintWriter out = response.getWriter();		
 		out.println(content);	
 		out.flush();
-		System.out.println(content);
+//		System.out.println(content);
 	}
 }
