@@ -22,8 +22,8 @@ jQuery("#editgrid").jqGrid({
 	{name:'url',index:'url', width:80,editable:true},     
 	{name:'time',index:'time', width:80,sorttype:"date"}      
 	 ],    
-   	rowNum:5,
-   	rowList:[5,20,30],
+   	rowNum:50,
+   	rowList:[50,100,200],
    	pager: '#pagered',
    	sortname: 'id',
     viewrecords: true,
