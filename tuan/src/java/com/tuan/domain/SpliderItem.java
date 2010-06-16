@@ -90,7 +90,7 @@ public class SpliderItem {
 	public String getCityName() {
 		for (Map.Entry<String, Integer> entry : Constants.CITY_ID.entrySet()) {
 			if (entry.getValue().equals(cityId)) {
-				System.out.println(entry.getKey()+":"+cityId);
+//				System.out.println(entry.getKey()+":"+cityId);
 				return entry.getKey();
 			}
 		}
