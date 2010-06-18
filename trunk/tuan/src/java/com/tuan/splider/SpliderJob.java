@@ -45,6 +45,7 @@ public class SpliderJob implements ApplicationContextAware {
 			try{
 				Article article = parser.parse(item.getUrl(), item.getCityId(), item.getFromId());
 				spliderService.addArticle(article);
+				Thread.sleep(100);
 			}catch(Exception e){
 				e.printStackTrace();
 			}

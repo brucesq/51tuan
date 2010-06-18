@@ -4,6 +4,7 @@
 package com.tuan.splider.parser;
 
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Date;
@@ -29,8 +30,14 @@ public class LashouParser implements ArticleParser{
 		urlcon.setConnectTimeout(10000);
 		urlcon.setReadTimeout(10000);
 		urlcon.setDoOutput(true);
+		HttpURLConnection httpConn = (HttpURLConnection) urlcon;
+		httpConn.setInstanceFollowRedirects(false);
+		httpConn.setRequestProperty("user-agent",
+			"Mozilla/4.0 (compatible; MSIE 5.0; Windows XP; DigExt)");
+		
+		
 		InputStream in = null;
-		in = url.openStream();
+		in = httpConn.getInputStream();
 		String content = IoUtils.pipe(in, "utf-8");
 		
 		Article article = new Article();

@@ -8,6 +8,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.time.DateUtils;
@@ -22,6 +24,14 @@ import com.tuan.util.IoUtils;
  * 
  */
 public class Juan24Parser implements ArticleParser {
+	
+	public static Map<Integer,Integer> cityMap = new HashMap<Integer,Integer>();
+	static{
+		cityMap.put(1, 1);
+		cityMap.put(7, 2);
+		cityMap.put(3, 14);
+		cityMap.put(10, 30);
+	}
 
 	public Article parse(String htmlurl, Integer cityId, Integer fromId)
 			throws Exception {
@@ -33,25 +43,26 @@ public class Juan24Parser implements ArticleParser {
 		urlcon.setDoOutput(true);
 		HttpURLConnection httpConn = (HttpURLConnection) urlcon;
 		httpConn.setInstanceFollowRedirects(false);
-		httpConn.addRequestProperty("Cookie", "9f4d_city=2;");  
-		
+		httpConn.addRequestProperty("Cookie", "9f4d_city="+cityMap.get(cityId)+";");  
+		httpConn.setRequestProperty("user-agent",
+			"Mozilla/4.0 (compatible; MSIE 5.0; Windows XP; DigExt)");
 		
 		
 		InputStream in = null;
-		in = url.openStream();
+		in = httpConn.getInputStream();
 		String content = IoUtils.pipe(in, "utf-8");
 
 		String key = "";
 		String cookie = "";
 		for (int i = 1; (key = httpConn.getHeaderFieldKey(i)) != null; i++) {
-			System.out.println(key);
+//			System.out.println(key);
 			if ("set-cookie".equalsIgnoreCase(key)) {
 				String cookieVal = httpConn.getHeaderField(i);
 				cookieVal = cookieVal.substring(0, cookieVal.indexOf(";"));
 				cookie = cookie + cookieVal + ";";
 			}
 		}
-		System.out.println(cookie);
+//		System.out.println(cookie);
 		Article article = new Article();
 		article.setUrl(htmlurl);
 		article.setCategoryId(1);
@@ -79,7 +90,7 @@ public class Juan24Parser implements ArticleParser {
 
 				index = content.indexOf("</a>");
 				String title = content.substring(0, index);
-				System.out.println(title);
+//				System.out.println(title);
 				article.setName(title);
 			}
 
@@ -95,7 +106,7 @@ public class Juan24Parser implements ArticleParser {
 				String nowPrice = content.substring(0, index);
 				content = content.substring(index + 9);
 				nowPrice = getPrice(nowPrice);
-				System.out.println(nowPrice);
+//				System.out.println(nowPrice);
 				article.setNowPrice(nowPrice);
 				index = content.indexOf("class=\"deal-discount\"");
 				if (index > 0) {
@@ -108,7 +119,7 @@ public class Juan24Parser implements ArticleParser {
 						index = content.indexOf("</td>");
 						String oldPrice = content.substring(0, index);
 						oldPrice = getPrice(oldPrice);
-						System.out.println(oldPrice);
+//						System.out.println(oldPrice);
 						article.setOriginalPrice(oldPrice);
 
 					}
@@ -117,7 +128,7 @@ public class Juan24Parser implements ArticleParser {
 						content = content.substring(index + 4);
 						index = content.indexOf("</td>");
 						String discount = content.substring(0, index);
-						System.out.println(discount);
+//						System.out.println(discount);
 						article.setDiscount(discount);
 
 					}
@@ -128,7 +139,7 @@ public class Juan24Parser implements ArticleParser {
 						index = content.indexOf("</td>");
 						String saveMoney = content.substring(0, index);
 						saveMoney = getPrice(saveMoney);
-						System.out.println(saveMoney);
+//						System.out.println(saveMoney);
 						article.setSaveMoney(saveMoney);
 
 					}
@@ -139,7 +150,7 @@ public class Juan24Parser implements ArticleParser {
 						content = content.substring(index + 5);
 						index = content.indexOf("\"");
 						String url = content.substring(0, index);
-						System.out.println(url);
+//						System.out.println(url);
 						article.setImgurl(url);
 					}
 				}
@@ -168,7 +179,7 @@ public class Juan24Parser implements ArticleParser {
 	public static void main(String[] args) throws Exception {
 
 		Juan24Parser p = new Juan24Parser();
-		p.parse("http://www.24quan.com/city.php?ename=wh", 1, 1);
+		p.parse("http://www.24quan.com/index.php", 10, 1);
 
 		// String content = "<div id=\"content\">"
 		// + " <div class=\"box-top\"></div>"
