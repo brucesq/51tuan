@@ -42,7 +42,7 @@
 	<bean id="spliderJobTrigger"
 		class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="spliderJob" />
-		<property name="cronExpression" value="0 16 12 * * ?" />
+		<property name="cronExpression" value="0 38 16 * * ?" />
 	</bean>
 
 
