@@ -2,6 +2,7 @@ package com.tuan.web.action;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,6 +11,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang.StringUtils;
+
+import com.hunthawk.framework.hibernate.CompareExpression;
+import com.hunthawk.framework.hibernate.CompareType;
+import com.hunthawk.framework.hibernate.HibernateExpression;
 import com.tuan.domain.Article;
 import com.tuan.service.SpliderService;
 import com.tuan.web.framework.ajax.BaseAction;
@@ -30,11 +36,35 @@ public class GetArticleListAction extends BaseAction {
 	@Override
 	public Map<String, Object> action(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		List<Article> newList = spliderService.getArticleList(1,6,"id",false,new ArrayList());
-		List<Article> recommendedList = spliderService.getArticleList(1,3,"id",false,new ArrayList());
+		Integer page = Integer.parseInt(request.getParameter("page"));
+		Integer type = 2;
+		if("1".equals(request.getParameter("type"))){
+			type = 1;
+		}
+		List<HibernateExpression> ex = new ArrayList<HibernateExpression>();
+		ex.add(new CompareExpression("endTime",new Date(),CompareType.Ge));
+		List<Article> newList = null;
+		if(type == 1){
+			ex.add(new CompareExpression("cityId",0,CompareType.Equal));
+			newList = spliderService.getArticleList(page,4,"id",false,ex);
+		}else{
+			Integer cid = 1;
+			String cityId = request.getParameter("cityid");
+			if(StringUtils.isNotEmpty(cityId)){
+				cid = Integer.parseInt(cityId);
+				changeCityId(request,response,cid);
+			}else{
+				cid = getCityId(request);
+			}
+			ex.add(new CompareExpression("cityId",cid,CompareType.Equal));
+			newList = spliderService.getArticleList(page,12,"id",false,ex);
+		}
+		
 		Map<String, Object> map = new HashMap<String,Object>(); 
 		map.put("newList", newList);
-		map.put("recommendedList", recommendedList);
+	
 		return map;
 	}
+	
+	
 }

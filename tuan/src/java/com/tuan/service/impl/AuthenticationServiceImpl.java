@@ -20,7 +20,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 			user.setPassword(password);
 			return user;
 		}
-		throw new AuthenticationException("ÓÃ»§ÃûÃÜÂë´íÎó");
+		throw new AuthenticationException("ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯");
 	}
 	
 	public User getUser(String username){

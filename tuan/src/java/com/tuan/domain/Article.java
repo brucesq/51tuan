@@ -1,6 +1,7 @@
 package com.tuan.domain;
 
 import java.util.Date;
+import java.util.Map;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import com.hunthawk.reader.enhance.util.ToolDateUtil;
 
 @Entity
 @Table(name="tuan_article")
@@ -41,7 +45,7 @@ public class Article {
 	
 	private Integer olderNum;
 	
-	private String imgurl;
+	private String imgurl;  
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -167,5 +171,29 @@ public class Article {
 		this.imgurl = imgurl;
 	}
 	
+	@Transient
+	public String getCityName() {
+		for (Map.Entry<String, Integer> entry : Constants.CITY_ID.entrySet()) {
+			if (entry.getValue().equals(cityId)) {
+//				System.out.println(entry.getKey()+":"+cityId);
+				return entry.getKey();
+			}
+		}
+		return "";
+	}
 	
+	@Transient
+	public String getFromName() {
+		for (Map.Entry<String, Integer> entry : Constants.FROM_ID.entrySet()) {
+			if (entry.getValue().equals(fromId)) {
+				return entry.getKey();
+			}
+		}
+		return "";
+	}
+	
+	@Transient
+	public String getEndTimeStr() {
+		return ToolDateUtil.dateToString(endTime);
+	}
 }

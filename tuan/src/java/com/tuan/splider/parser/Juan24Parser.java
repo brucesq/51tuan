@@ -35,8 +35,8 @@ public class Juan24Parser implements ArticleParser {
 
 	public Article parse(String htmlurl, Integer cityId, Integer fromId)
 			throws Exception {
-
-		URL url = new URL(htmlurl);
+		
+		URL url = new URL("http://www.24quan.com/index.php");
 		URLConnection urlcon = url.openConnection();
 		urlcon.setConnectTimeout(10000);
 		urlcon.setReadTimeout(10000);

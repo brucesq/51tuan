@@ -24,6 +24,8 @@ public interface SpliderService {
 			String orderBy, boolean isAsc,
 			Collection<HibernateExpression> expressions);
 	
+	public Long getArticleListCount(Collection<HibernateExpression> expressions);
+	
 	public List<SpliderItem> getSpliderItem(int pageNo, int pageSize,
 			String orderBy, boolean isAsc,
 			Collection<HibernateExpression> expressions);

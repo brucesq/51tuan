@@ -42,7 +42,7 @@
 	<bean id="spliderJobTrigger"
 		class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="spliderJob" />
-		<property name="cronExpression" value="0 38 16 * * ?" />
+		<property name="cronExpression" value="0 33 15 * * ?" />
 	</bean>
 
 
@@ -55,5 +55,9 @@
 <bean id="manzuoParser" class="com.tuan.splider.parser.ManzuoParser" />
 
 <bean id="juan24Parser" class="com.tuan.splider.parser.Juan24Parser" />
+
+<bean id="tuanmeiParser" class="com.tuan.splider.parser.TuanmeiParser" />
+
+<bean id="ytuanParser" class="com.tuan.splider.parser.YtuanParser" />
 
 </beans>
