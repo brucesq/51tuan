@@ -1,0 +1,8 @@
+{"dataRows":[
+#foreach( $article in $list )
+{"id":${article.id},"city":"${article.cityName}","url":"${article.url}","parser":"${article.name}","from":"${article.fromName}","time":"${article.endTimeStr}","nowPrice":"${article.nowPrice}","originalPrice":"${article.originalPrice}","discount":"${article.discount}","saveMoney":"${article.saveMoney}","imgurl":"${article.imgurl}"}
+#if(${velocityCount} < $list.size())
+,
+#end
+#end
+],"page":${currentPage},"rows":${records},"total":${totalPage}}
