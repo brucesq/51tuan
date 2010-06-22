@@ -145,59 +145,144 @@
 			<div style="margin-top:10px;">
 				<ul class="list-h">
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
-					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
-					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
+					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
+					<div class="p-price">
+						<table>
+							<tr>
+								<td>来自：58同城</td>
+								<td>地区：北京</td>
+							</tr>
+							<tr>
+								<td>原价：￥171.00</td>
+								<td>现价：<strong>￥58.00</strong></td>
+							</tr>
+							<tr>
+								<td>折扣：3.3折</td>
+								<td>节省：<strong>￥133.00</strong></td>
+							</tr>
+						</table>
+					</div>
 					</li>
 				</ul>
 			</div>
