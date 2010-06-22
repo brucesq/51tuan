@@ -1,238 +1,271 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-<title>Electronix Store</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="iecss.css" />
-<![endif]-->
+<title>百团网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<link href="css/index.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/boxOver.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-
 </head>
-<body>
 
-<div id="main_container">
-	<div class="top_bar">
-    	<div class="top_search">
-        	<div class="search_text"><a href="#">Advanced Search</a></div>
-            <input type="text" class="search_input" name="search" />
-            <input type="image" src="images/search.gif" class="search_bt"/>
-        </div>
-        
-        <div class="languages">
-        	<div class="lang_text">Languages:</div>
-            <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a>
-            <a href="#" class="lang"><img src="images/de.gif" alt="" title="" border="0" /></a>       
-        </div>
-    
-    </div>
-	<div id="header">
-        
-        <div id="logo">
-            <a href="index.html"><img src="images/logo.png" alt="" title="" border="0" width="237" height="140" /></a>
-	    </div>
-        
-        <div class="oferte_content">
-        	<div class="top_divider"><img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
-        	<div class="oferta">
-            
-           		<div class="oferta_content">
-                	<img src="images/laptop.png" width="94" height="92" border="0" class="oferta_img" />
-                	
-                    <div class="oferta_details">
-                            <div class="oferta_title">Samsung GX 2004 LM</div>
-                            <div class="oferta_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            </div>
-                            <a href="details.html" class="details">details</a>
-                    </div>
-                </div>
-                <div class="oferta_pagination">
-                
-                     <span class="current">1</span>
-                     <a href="#?page=2">2</a>
-                     <a href="#?page=3">3</a>
-                     <a href="#?page=3">4</a>
-                     <a href="#?page=3">5</a>  
-                             
-                </div>        
+<body class="index">
 
-            </div>
-            <div class="top_divider"><img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
-        	
-        </div> <!-- end of oferte_content-->
-        
-
-    </div>
-    
-   <div id="main_content"> 
-   
-            <div id="menu_tab">
-            <div class="left_menu_corner"></div>
-                    <ul class="menu">
-                         <li><a href="index.html" class="nav1">  Home </a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav2">Products</a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav3">Specials</a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav4">My account</a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav4">Sign Up</a></li>
-                         <li class="divider"></li>                         
-                         <li><a href="#" class="nav5">Shipping </a></li>
-                         <li class="divider"></li>
-                         <li><a href="contact.html" class="nav6">Contact Us</a></li>
-                         <li class="divider"></li>
-                         <li class="currencies">Currencies
-                         <select>
-                         <option>US Dollar</option>
-                         <option>Euro</option>
-                         </select>
-                         </li>
-                    </ul>
-
-             <div class="right_menu_corner"></div>
-            </div><!-- end of menu tab -->
-            
-    <div class="crumb_navigation">
-    Navigation: <span class="current">Home</span>
-    
-    </div>        
-    
-    
-   <div class="left_content">
-    <div class="title_box">Categories</div>
-    
-        <ul class="left_menu">
-        <li class="odd"><a href="services.html">Processors</a></li>
-        <li class="even"><a href="services.html">Motherboards</a></li>
-         <li class="odd"><a href="services.html">Desktops</a></li>
-        <li class="even"><a href="services.html">Laptops & Notebooks</a></li>
-         <li class="odd"><a href="services.html">Processors</a></li>
-         <li class="even"><a href="services.html">Motherboards</a></li>
-        <li class="odd"><a href="services.html">Processors</a></li>
-        <li class="even"><a href="services.html">Motherboards</a></li>
-         <li class="odd"><a href="services.html">Desktops</a></li>
-        <li class="even"><a href="services.html">Laptops & Notebooks</a></li>
-         <li class="odd"><a href="services.html">Processors</a></li>
-         <li class="even"><a href="services.html">Motherboards</a></li>
-        </ul> 
-        
-        
-     <div class="title_box">Special Products</div>  
-     <div class="border_box">
-         <div class="product_title"><a href="details.html">Motorola 156 MX-VL</a></div>
-         <div class="product_img"><a href="details.html"><img src="images/laptop.png" alt="" title="" border="0" /></a></div>
-         <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-     </div>  
-     
-     
-     <div class="title_box">Newsletter</div>  
-     <div class="border_box">
-		<input type="text" name="newsletter" class="newsletter_input" value="your email"/>
-        <a href="#" class="join">join</a>
-     </div>  
-     
-     <div class="banner_adds">
-     
-     <a href="#"><img src="images/bann2.jpg" alt="" title="" border="0" /></a>
-     </div>    
-        
-    
-   </div><!-- end of left content -->
-   
-   
-   <div class="center_content" id="center_content">
-   	
- 
- 
-    
-    
-   
-   </div><!-- end of center content -->
-   
-   <div class="right_content">
-   		<div class="shopping_cart">
-        	<div class="cart_title">Shopping cart</div>
-            
-            <div class="cart_details">
-            3 items <br />
-            <span class="border_cart"></span>
-            Total: <span class="price">350$</span>
-            </div>
-            
-            <div class="cart_icon"><a href="#" title="header=[Checkout] body=[&nbsp;] fade=[on]"><img src="images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
-        
-        </div>
-   
-   
-     <div class="title_box">What new</div>  
-     <div class="border_box">
-         <div class="product_title"><a href="details.html">Motorola 156 MX-VL</a></div>
-         <div class="product_img"><a href="details.html"><img src="images/p2.gif" alt="" title="" border="0" /></a></div>
-         <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-     </div>  
-     
-     
-     
-    <div class="title_box">Manufacturers</div>
-    
-        <ul class="left_menu">
-        <li class="odd"><a href="services.html">Sony</a></li>
-        <li class="even"><a href="services.html">Samsung</a></li>
-         <li class="odd"><a href="services.html">Daewoo</a></li>
-        <li class="even"><a href="services.html">LG</a></li>
-         <li class="odd"><a href="services.html">Fujitsu Siemens</a></li>
-         <li class="even"><a href="services.html">Motorola</a></li>
-        <li class="odd"><a href="services.html">Phillips</a></li>
-        <li class="even"><a href="services.html">Beko</a></li>
-        </ul>      
-     
-     <div class="banner_adds">
-     
-     <a href="#"><img src="images/bann1.jpg" alt="" title="" border="0" /></a>
-     </div>        
-     
-   </div><!-- end of right content -->   
-   
-            
-   </div><!-- end of main content -->
-   
-   
-   
-   <div class="footer">
-   
-
-        <div class="left_footer">
-        <img src="images/footer_logo.png" alt="" title="" width="170" height="49"/>
-        </div>
-        
-        <div class="center_footer">
-        Template name. All Rights Reserved 2008<br />
-        <a href="http://csscreme.com/freecsstemplates/" title="free templates"><img src="images/csscreme.jpg" alt="free templates" title="free templates" border="0" /></a><br />
-        <img src="images/payment.gif" alt="" title="" />
-        </div>
-        
-        <div class="right_footer">
-        <a href="index.html">home</a>
-        <a href="details.html">about</a>
-        <a href="details.html">sitemap</a>
-        <a href="details.html">rss</a>
-        <a href="contact.html">contact us</a>
-        </div>   
-   
-   </div>                 
-
+<div class="w" style="text-align:right;font-size:14px;font-family:宋体">百团大战”吹响团购-集结号</div>
+<div class="w">
+	<div class="logo"><img src="image/logo.gif" width="120" height="90"></a></div>
+	<div class="nav">
+	<ul>
+		<li class="selected"><a href="#">首&nbsp;页</a></li>
+	</ul>
+	</div>
+	<span class="clr"></span>
+	<div class="des">
+		<div style="float:left;margin:18px;">
+			当前所在城市：<span id="city" style="background-color:#FFF;padding:5px;color:#BBD9F7;">北京</span>
+			<span style="padding-left:20px;cursor:pointer;" onclick="changeCity();">切换城市</span>
+			<span class="share_span">分享此网站： <A class=share_qq onclick="window.prompt('请复制网址','www.100grouper.com');" href="javascript:void(0)">MSN/QQ</A> <A class=share_sina href="http://v.t.sina.com.cn/share/share.php?url=www.100grouper.com&title=%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81&pic=&type=0" target=_blank>新浪微博</A> <A class=share_kx href="http://www.kaixin001.com/repaste/share.php?rurl=www.100grouper.com&rcontent=www.100grouper.com%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81&rtitle=%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81" target=_blank>开心网</A> <A class=share_rr href="http://share.renren.com/share/buttonshare.do?link=www.100grouper.com&title=www.100grouper.com%20%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81&body=%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98" target=_blank>人人网</A> <A class=share_db href="http://www.douban.com/recommend/?url=www.100grouper.com&title=www.100grouper.com%20%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81" target=_blank>豆瓣</A> <A class=share_email href="mailto:?subject=www.100grouper.com%20%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81&body=%E7%99%BE%E5%9B%A2%E5%A4%A7%E8%B4%AD%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%8F%98%E5%8F%98%E5%8F%98%EF%BC%8C%E8%B6%85%E4%BD%8E%E6%8A%98%E6%89%A3%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%8F%98%EF%BC%81">Email</A></span>
+			<span class="clr"></span>
+			<div id="cityList">
+				<ul>
+					<li onclick="changeCity();" style="color:#BBD9F7;">北京</li>
+					<li onclick="changeCity();">上海</li>
+					<li onclick="changeCity();">武汉</li>
+					<li onclick="changeCity();">广州</li>
+					<li onclick="changeCity();">深圳</li>
+					<li onclick="changeCity();">杭州</li>
+					<li onclick="changeCity();">天津</li>
+					<li onclick="changeCity();">南京</li>
+					<li onclick="changeCity();">成都</li>
+					<li onclick="changeCity();">长沙</li>
+					<li onclick="changeCity();">西安</li>
+					<li onclick="changeCity();">郑州</li>
+					<li onclick="changeCity();">厦门</li>
+					<li onclick="changeCity();">重庆</li>
+					<li onclick="changeCity();">福州</li>
+					<li onclick="changeCity();">石家庄</li>
+					<li onclick="changeCity();">大连</li>
+					<li onclick="changeCity();">青岛</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
 
 </div>
-<!-- end of main_container -->
+
+<div class="w main">
+	<div class="left">
+		<!--begin-->
+		<!--
+		<div style="background-color:#BBD9F7;font-size:14px;font-weight:bold;color:#FFF;padding-top:5px;padding-left:5px;height:20px;">
+			<div style="float:left;">商品分类</div>
+			<div style="text-align:right;padding-right:5px;"><a href="#" style="font-size:14px;font-weight:normal;color:#FFF;">全部分类&gt;&gt;</a></div>
+		</div>
+		<div style="margin-top:15px;padding-left:5px;">
+			<div style="margin-top:10px;">
+				<a href="#" style="font-size:14px;font-weight:bold;color:#BBD9F7;">家用电器</a>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="float:left;width:106px;"><a href="#" style="font-size:12px;font-weight:normal;">平板电视</a></div>
+				<div style=""><a href="#" style="font-size:12px;font-weight:normal;">家电配件</a></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="float:left;width:106px;"><a href="#" style="font-size:12px;font-weight:normal;">平板电视</a></div>
+				<div style=""><a href="#" style="font-size:12px;font-weight:normal;">家电配件</a></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="float:left;width:106px;"><a href="#" style="font-size:12px;font-weight:normal;">平板电视</a></div>
+				<div style=""><a href="#" style="font-size:12px;font-weight:normal;">家电配件</a></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="float:left;width:106px;"><a href="#" style="font-size:12px;font-weight:normal;">平板电视</a></div>
+				<div style=""><a href="#" style="font-size:12px;font-weight:normal;">家电配件</a></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="float:left;width:106px;"><a href="#" style="font-size:12px;font-weight:normal;">平板电视</a></div>
+				<div style=""><a href="#" style="font-size:12px;font-weight:normal;">家电配件</a></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="float:left;width:106px;"><a href="#" style="font-size:12px;font-weight:normal;">平板电视</a></div>
+				<div style=""><a href="#" style="font-size:12px;font-weight:normal;">家电配件</a></div>
+			</div>
+		</div>
+		-->
+		<!--end-->
+
+		<div style="background-color:#BBD9F7;font-size:14px;font-weight:bold;color:#FFF;padding-top:5px;padding-left:5px;height:20px;">
+			<div style="padding-left:5px;">团购导航</div>
+		</div>
+		<div style="margin-top:15px;padding-left:15px;">
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.meituan.com/beijing" style="font-size:24px;font-family:华文彩云">美团网</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.lashou.com/beijing" style="font-size:24px;font-family:华文彩云">拉手网</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://t.58.com/index_cbj.html" style="font-size:24px;font-family:华文彩云">58团购</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.manzuo.com/his/musicboxktv__xNcQ4Q_HiVw.htm" style="font-size:24px;font-family:华文彩云">满座网</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.24quan.com/index.php" style="font-size:24px;font-family:华文彩云">24券</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.ftuan.com/index.php" style="font-size:24px;font-family:华文彩云">F团</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.aibang.com/" style="font-size:24px;font-family:华文彩云">爱帮网</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.jiapintuan.com/" style="font-size:24px;font-family:华文彩云">佳品团</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.liketuan.com/index.php?m=Goods&a=show&id=138" style="font-size:24px;font-family:华文彩云">橘子团</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.cocotuan.com/Product/75-ShangYuZuoTaQingYuGuo.aspx" style="font-size:24px;font-family:华文彩云">可可团</a></div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="middle">
+		<!--begin-->
+		<div style="margin-top:15px;padding-left:5px;">
+			<div>
+				<div style="float:left;background-color:#BBD9F7;color:#FFF;height:24px;line-height:24px;overflow:hidden;width:80px;font-size:16px;font-weight:bold;padding-left:12px;">精品推荐</div>
+				<div style="background-color:#E0E0E0;height:24px;">&nbsp;</div>
+			</div>
+			<div style="margin-top:10px;">
+				<ul class="list-h">
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+					<li>
+					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="100" width="100"></a></div>
+					<div class="p-name"><a target="_blank" href="#">亚都（YADU）LG03-SA 冷风机 风爽<font color="#ff6600">超低特价再送乐扣三件套！厂家支持，限时限量！</font></a></div>
+					<div class="p-price">京东价：<strong>￥299.00</strong></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end-->
+
+		<!--下面开始重复-->
+		<div style="margin-top:15px;padding-left:5px;">
+			<div>
+				<div style="float:left;background-color:#BBD9F7;color:#FFF;height:24px;line-height:24px;overflow:hidden;width:80px;font-size:16px;font-weight:bold;padding-left:12px;">团购信息</div>
+				<div style="background-color:#E0E0E0;height:24px;">&nbsp;</div>
+			</div>
+			<div style="margin-top:10px;" id="center_content">
+				
+			</div>
+		</div>
+
+	</div>
+
+	<!--
+	<div class="right">
+		<div style="border:solid #E6E6E6;border-width:0 1px 1px;margin-bottom:5px;">
+			<div style="background-color:#E0E0E0;font-size:14px;font-weight:bold;padding-top:5px;padding-left:5px;height:20px;">
+				<div style="float:left;">百团快报</div>			
+				<div style="text-align:right;padding-right:5px;"><a href="#" style="font-size:14px;font-weight:normal;color:#7F7F7F;">更多&gt;&gt;</a></div>
+			</div>
+			<div>
+				<ul>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+					<li>·<a href="#">京东12年，疯狂618，疯抢开锣!</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	-->
+
+</div>
+
+<span class="clr"></span>
+
+<div class="w">
+	<div class="footer">
+		<a href="#" target="_blank">关于我们</a>|
+		<a href="#" target="_blank">联系我们</a>|
+		<a href="#" target="_blank">友情链接</a>
+	</div>
+	<div class="copyright">Copyright&#169;2010-2012&nbsp;&nbsp;百团网&nbsp;版权所有
+	</div>
+</div>
+
 </body>
+</html>
 <script type="text/javascript">
+
 $(document).ready(function(){
 	$("#center_content").load("ajax/getArticleList?page=1");
 });
+
+function changeCity(){
+	var obj = document.getElementById("cityList");
+	if(obj.style.display == 'none' || obj.style.display=='')
+		obj.style.display="block";
+	else if(obj.style.display == 'block')
+		obj.style.display="none";
+}
 </script>
-</html>
