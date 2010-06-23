@@ -7,7 +7,7 @@ a:hover{color:#c00;text-decoration:underline;}
 a:active{color:#900;}
 
 /*header*/
-.w{width:980px;margin:0 auto;zoom:1;margin-bottom:7px;display:inline;}
+.w{width:980px;margin:0 auto;zoom:1;margin-bottom:7px;}
 .logo{float:left;padding:8px 10px 0;margin-right:10px;}
 .nav{float:left;padding-top:68px;position:relative;overflow:hidden;margin-bottom:-2px;}
 .nav a{float:left;width:87px;height:27px;line-height:29px;text-decoration:none;text-align:center;font-size:14px;font-weight:bold;color:#000;}
