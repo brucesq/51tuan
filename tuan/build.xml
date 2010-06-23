@@ -29,44 +29,31 @@
   <target name="compile" depends="init">
     <javac srcdir="${srcDir}"
            destdir="${buildDir}"
-		   debug="true">
+		   debug="true"
+		   encoding="utf-8"
+		   >
         <classpath refid="classpath"/>
      </javac>
   	<copy todir="${buildDir}">
-  		<fileset dir="${srcDir}/main/java/framework">
+  		<fileset dir="${srcDir}/java">
   			<exclude name="**/*.java"/>
-  			<exclude name="applicationContext*.xml"/>
-  			<exclude name="ehcache.xml"/>
-  			<exclude name="*.properties"/>
-  			<exclude name="**/mapping/*hbm.xml"/>
-			<exclude name="*.drl"/>
 		</fileset>
-		<fileset dir="${srcDir}/main/java/web">
+		<fileset dir="${srcDir}/resource">
   			<exclude name="**/*.java"/>
-  			<exclude name="applicationContext*.xml"/>
-  			<exclude name="ehcache.xml"/>
-  			<exclude name="*.properties"/>
-  			<exclude name="**/mapping/*hbm.xml"/>
-			<exclude name="*.drl"/>
 		</fileset>
   	</copy>
   </target>
 
     <target name="dist" depends="compile">
-	<jar destfile="${dist.lib}/reader-cms.jar" basedir="${buildDir}" />
+	
   	<copy todir="${distDir}">
   	  	  		<fileset dir="${webDir}" >
   	  	  			<exclude name="WEB-INF/classes/**"/>
   	  	  		</fileset>
   	</copy>
   	<copy todir="${distDir}/WEB-INF/classes">
-  				<fileset dir="${srcDir}/main/resources">
-  					<include name="**/*.properties" />
-  					<include name="**/*.xml" />
-  					<include name="**/mapping/*hbm.xml"/>
-					<include name="**/*.drl" />
-  					<include name="**/velocity/**" />
-  					
+  				<fileset dir="${buildDir}">
+  					<include name="**/*" />
   				</fileset>
   	</copy>
   </target>
