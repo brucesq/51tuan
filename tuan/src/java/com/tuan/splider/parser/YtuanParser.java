@@ -148,7 +148,7 @@ public class YtuanParser   implements ArticleParser{
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args)throws Exception {
 		// TODO Auto-generated method stub
 		String content = 
 			"<div id=\"content\">"+
@@ -203,9 +203,11 @@ public class YtuanParser   implements ArticleParser{
 			"																					</div> "+
 			"						</div>";
 		
-		 Article article = new Article();
-		 parserContent(content, article);
-
+//		 Article article = new Article();
+//		 parserContent(content, article);
+		 YtuanParser p = new YtuanParser();
+			p.parse("http://www.ytuan.com/", 1, 5);
+		
 	}
 
 }

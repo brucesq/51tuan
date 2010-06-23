@@ -123,7 +123,7 @@ public class MeituanParser  implements ArticleParser{
 						index= content.indexOf("\"");
 						String url = content.substring(0,index);
 //						System.out.println("http://www.meituan.com"+url);
-						article.setImgurl("http://www.meituan.com"+url);
+						article.setImgurl(url);
 					}
 				}
 			}

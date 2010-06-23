@@ -46,12 +46,12 @@ public class GetArticleListAction extends BaseAction {
 		List<Article> newList = null;
 		if(type == 1){
 			ex.add(new CompareExpression("cityId",0,CompareType.Equal));
-			newList = spliderService.getArticleList(page,4,"id",false,ex);
+			newList = spliderService.getArticleList(page,6,"id",false,ex);
 		}else{
 			Integer cid = 1;
 			String cityId = request.getParameter("cityid");
 			if(StringUtils.isNotEmpty(cityId)){
-				cid = Integer.parseInt(cityId);
+				cid = Integer.parseInt(cityId); 
 				changeCityId(request,response,cid);
 			}else{
 				cid = getCityId(request);
