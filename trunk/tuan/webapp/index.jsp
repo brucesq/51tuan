@@ -14,7 +14,7 @@
 
 <body class="index">
 
-<div class="w" style="text-align:right;font-size:14px;font-family:宋体">百团大战”吹响团购-集结号</div>
+<div class="w" style="text-align:right;font-size:14px;font-family:宋体">“百团大战”吹响团购-集结号</div>
 <div class="w">
 	<div class="logo"><img src="image/logo.gif" width="120" height="90"></a></div>
 	<div class="nav">
