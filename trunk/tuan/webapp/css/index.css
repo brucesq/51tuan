@@ -24,7 +24,7 @@ a:active{color:#900;}
 /*middle*/
 .middle{float:left;width:777px;margin:0px;margin-top:-15px;}
 .list-h{overflow:hidden;zoom:1;list-style-type:none;}
-.list-h li{float:left;width:200px;text-decoration:none;text-align:center;margin-right:40px;}
+.list-h li{float:left;width:208px;text-decoration:none;text-align:center;margin-right:30px;}
 .p-img,.p-name,.p-price{overflow:hidden;}
 .p-img{margin:5px 0;}
 .p-name{word-break:break-all;font-size:12px;font-weight:normal;}
