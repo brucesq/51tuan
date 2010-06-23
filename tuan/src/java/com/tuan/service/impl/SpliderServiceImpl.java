@@ -66,4 +66,12 @@ public class SpliderServiceImpl implements SpliderService {
 	public Long getSpliderItemCount(Collection<HibernateExpression> expressions){
 		return controller.getResultCount(SpliderItem.class, expressions);
 	}
+	
+	public Article getArticle(Integer id){
+		return controller.get(Article.class, id);
+	}
+
+	public void editArticle(Article item){
+		controller.update(item);
+	}
 }

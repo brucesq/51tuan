@@ -38,7 +38,7 @@ jQuery("#editgrid").jqGrid({
          repeatitems : false    
       },    
     caption:"Editing Example",
-    editurl:"../ajax/editSpliderItem"
+    editurl:"../ajax/editArticleItem"
 });
 $("#bedata").click(function(){
 	var gr = jQuery("#editgrid").jqGrid('getGridParam','selrow');
