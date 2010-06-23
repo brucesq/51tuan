@@ -64,4 +64,6 @@
 
 <bean id="jiapintuanParser" class="com.tuan.splider.parser.JiapintuanParser" />
 
+<bean id="ftuanParser" class="com.tuan.splider.parser.FtuanParser" />
+
 </beans>
