@@ -31,24 +31,24 @@
 			<span class="clr"></span>
 			<div id="cityList">
 				<ul>
-					<li onclick="changeCity();" style="color:#BBD9F7;">北京</li>
-					<li onclick="changeCity();">上海</li>
-					<li onclick="changeCity();">武汉</li>
-					<li onclick="changeCity();">广州</li>
-					<li onclick="changeCity();">深圳</li>
-					<li onclick="changeCity();">杭州</li>
-					<li onclick="changeCity();">天津</li>
-					<li onclick="changeCity();">南京</li>
-					<li onclick="changeCity();">成都</li>
-					<li onclick="changeCity();">长沙</li>
-					<li onclick="changeCity();">西安</li>
-					<li onclick="changeCity();">郑州</li>
-					<li onclick="changeCity();">厦门</li>
-					<li onclick="changeCity();">重庆</li>
-					<li onclick="changeCity();">福州</li>
-					<li onclick="changeCity();">石家庄</li>
-					<li onclick="changeCity();">大连</li>
-					<li onclick="changeCity();">青岛</li>
+					<li onclick="changeCityContent(1);" style="color:#BBD9F7;">北京</li>
+					<li onclick="changeCityContent(2);">上海</li>
+					<li onclick="changeCityContent(7);">武汉</li>
+					<li onclick="changeCityContent(4);">广州</li>
+					<li onclick="changeCityContent(3);">深圳</li>
+					<li onclick="changeCityContent(14);">杭州</li>
+					<li onclick="changeCityContent(15);">天津</li>
+					<li onclick="changeCityContent(5);">南京</li>
+					<li onclick="changeCityContent(6);">成都</li>
+					<li onclick="changeCityContent(18);">长沙</li>
+					<li onclick="changeCityContent(12);">西安</li>
+					<li onclick="changeCityContent(10);">郑州</li>
+					<li onclick="changeCityContent(25);">厦门</li>
+					<li onclick="changeCityContent(13);">重庆</li>
+					<li onclick="changeCityContent(9);">福州</li>
+					<li onclick="changeCityContent(24);">石家庄</li>
+					<li onclick="changeCityContent(11);">大连</li>
+					<li onclick="changeCityContent(17);">青岛</li>
 				</ul>
 			</div>
 		</div>
@@ -142,149 +142,9 @@
 				<div style="float:left;background-color:#BBD9F7;color:#FFF;height:24px;line-height:24px;overflow:hidden;width:80px;font-size:16px;font-weight:bold;padding-left:12px;">精品推荐</div>
 				<div style="background-color:#E0E0E0;height:24px;">&nbsp;</div>
 			</div>
-			<div style="margin-top:10px;">
-				<ul class="list-h">
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-					<li>
-					<div class="p-img"><a target="_blank" href="#"><img src="product/056a6a61-aa69-4495-b31e-fc078fc8744e.jpg" alt="亚都（YADU）LG03-SA 冷风机 风爽" height="122" width="202"></a></div>
-					<div class="p-name"><a target="_blank" href="#">仅售58元！<font color="#ff6600">原价171元吴奇隆柠檬叶子招牌奔驰火锅双人套餐！</font></a></div>
-					<div class="p-price">
-						<table>
-							<tr>
-								<td>来自：58同城</td>
-								<td>地区：北京</td>
-							</tr>
-							<tr>
-								<td>原价：￥171.00</td>
-								<td>现价：<strong>￥58.00</strong></td>
-							</tr>
-							<tr>
-								<td>折扣：3.3折</td>
-								<td>节省：<strong>￥133.00</strong></td>
-							</tr>
-						</table>
-					</div>
-					</li>
-				</ul>
+			<div style="margin-top:10px;" id="top_content">
+				
+				
 			</div>
 		</div>
 		<!--end-->
@@ -345,6 +205,7 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
+	$("#top_content").load("ajax/getArticleList?page=1&type=1");
 	$("#center_content").load("ajax/getArticleList?page=1");
 });
 
@@ -354,5 +215,9 @@ function changeCity(){
 		obj.style.display="block";
 	else if(obj.style.display == 'block')
 		obj.style.display="none";
+}
+function changeCityContent(cid){
+	$("#center_content").load("ajax/getArticleList?page=1&cityid="+cid);
+	changeCity();
 }
 </script>
