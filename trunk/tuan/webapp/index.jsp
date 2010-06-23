@@ -26,29 +26,29 @@
 	<div class="des">
 		<div style="float:left;margin:18px;">
 			当前所在城市：<span id="city" style="background-color:#FFF;padding:5px;color:#BBD9F7;">北京</span>
-			<span style="padding-left:20px;cursor:pointer;" onclick="changeCity();">切换城市</span>
+			<span style="padding-left:20px;cursor:pointer;" onclick="changeCity('');">切换城市</span>
 			<span class="share_span">分享此网站： <A class=share_qq onclick="window.prompt('请复制网址','www.100grouper.com');" href="javascript:void(0)">MSN/QQ</A> <A class=share_sina href="http://v.t.sina.com.cn/share/share.php?url=www.100grouper.com&title=%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81&pic=&type=0" target=_blank>新浪微博</A> <A class=share_kx href="http://www.kaixin001.com/repaste/share.php?rurl=www.100grouper.com&rcontent=www.100grouper.com%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81&rtitle=%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81" target=_blank>开心网</A> <A class=share_rr href="http://share.renren.com/share/buttonshare.do?link=www.100grouper.com&title=www.100grouper.com%20%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81&body=%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7" target=_blank>人人网</A> <A class=share_db href="http://www.douban.com/recommend/?url=www.100grouper.com&title=www.100grouper.com%20%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81" target=_blank>豆瓣</A> <A class=share_email href="mailto:?subject=www.100grouper.com%20%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81&body=%E2%80%9C%E7%99%BE%E5%9B%A2%E5%A4%A7%E6%88%98%E2%80%9D%E5%90%B9%E5%93%8D%E5%9B%A2%E8%B4%AD-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%81">Email</A></span>
 			<span class="clr"></span>
 			<div id="cityList">
 				<ul>
-					<li onclick="changeCityContent(1);" style="color:#BBD9F7;">北京</li>
-					<li onclick="changeCityContent(2);">上海</li>
-					<li onclick="changeCityContent(7);">武汉</li>
-					<li onclick="changeCityContent(4);">广州</li>
-					<li onclick="changeCityContent(3);">深圳</li>
-					<li onclick="changeCityContent(14);">杭州</li>
-					<li onclick="changeCityContent(15);">天津</li>
-					<li onclick="changeCityContent(5);">南京</li>
-					<li onclick="changeCityContent(6);">成都</li>
-					<li onclick="changeCityContent(18);">长沙</li>
-					<li onclick="changeCityContent(12);">西安</li>
-					<li onclick="changeCityContent(10);">郑州</li>
-					<li onclick="changeCityContent(25);">厦门</li>
-					<li onclick="changeCityContent(13);">重庆</li>
-					<li onclick="changeCityContent(9);">福州</li>
-					<li onclick="changeCityContent(24);">石家庄</li>
-					<li onclick="changeCityContent(11);">大连</li>
-					<li onclick="changeCityContent(17);">青岛</li>
+					<li onclick="changeCityContent(1,'北京');" style="color:#BBD9F7;">北京</li>
+					<li onclick="changeCityContent(2,'上海');">上海</li>
+					<li onclick="changeCityContent(7,'武汉');">武汉</li>
+					<li onclick="changeCityContent(4,'广州');">广州</li>
+					<li onclick="changeCityContent(3,'深圳');">深圳</li>
+					<li onclick="changeCityContent(14,'杭州');">杭州</li>
+					<li onclick="changeCityContent(15,'天津');">天津</li>
+					<li onclick="changeCityContent(5,'南京');">南京</li>
+					<li onclick="changeCityContent(6,'成都');">成都</li>
+					<li onclick="changeCityContent(18,'长沙');">长沙</li>
+					<li onclick="changeCityContent(12,'西安');">西安</li>
+					<li onclick="changeCityContent(10,'郑州');">郑州</li>
+					<li onclick="changeCityContent(25,'厦门');">厦门</li>
+					<li onclick="changeCityContent(13,'重庆');">重庆</li>
+					<li onclick="changeCityContent(9,'福州');">福州</li>
+					<li onclick="changeCityContent(24,'石家庄');">石家庄</li>
+					<li onclick="changeCityContent(11,'大连');">大连</li>
+					<li onclick="changeCityContent(17,'青岛');">青岛</li>
 				</ul>
 			</div>
 		</div>
@@ -131,12 +131,22 @@
 				<div><a target="_blank" href="http://www.cocotuan.com/Product/75-ShangYuZuoTaQingYuGuo.aspx" style="font-size:24px;font-family:华文彩云">可可团</a></div>
 			</div>
 		</div>
-
-
 	</div>
+
 
 	<div class="middle">
 		<!--begin-->
+		<div style="margin-top:15px;padding-left:5px;">
+			<div>
+				<div style="float:left;background-color:#BBD9F7;color:#FFF;height:24px;line-height:24px;overflow:hidden;width:80px;font-size:16px;font-weight:bold;padding-left:12px;">本地团购</div>
+				<div style="background-color:#E0E0E0;height:24px;">&nbsp;</div>
+			</div>
+			<div style="margin-top:10px;" id="center_content">
+				
+			</div>
+		</div>
+		<!--end-->
+
 		<div style="margin-top:15px;padding-left:5px;">
 			<div>
 				<div style="float:left;background-color:#BBD9F7;color:#FFF;height:24px;line-height:24px;overflow:hidden;width:80px;font-size:16px;font-weight:bold;padding-left:12px;">精品推荐</div>
@@ -144,18 +154,6 @@
 			</div>
 			<div style="margin-top:10px;" id="top_content">
 				
-				
-			</div>
-		</div>
-		<!--end-->
-
-		<!--下面开始重复-->
-		<div style="margin-top:15px;padding-left:5px;">
-			<div>
-				<div style="float:left;background-color:#BBD9F7;color:#FFF;height:24px;line-height:24px;overflow:hidden;width:80px;font-size:16px;font-weight:bold;padding-left:12px;">团购信息</div>
-				<div style="background-color:#E0E0E0;height:24px;">&nbsp;</div>
-			</div>
-			<div style="margin-top:10px;" id="center_content">
 				
 			</div>
 		</div>
@@ -206,18 +204,28 @@
 
 $(document).ready(function(){
 	$("#top_content").load("ajax/getArticleList?page=1&type=1");
-	$("#center_content").load("ajax/getArticleList?page=1");
+	$("#center_content").load("ajax/getArticleList?page=1&cityid=1");
 });
 
-function changeCity(){
+function changeCity(val){
 	var obj = document.getElementById("cityList");
 	if(obj.style.display == 'none' || obj.style.display=='')
 		obj.style.display="block";
 	else if(obj.style.display == 'block')
 		obj.style.display="none";
+	if(val != ''){
+		$("#city").html(val);
+		$("#cityList").find("li").each(function(i,n){
+			$(n).css("color","");
+			var str = $(n).html();
+			if($.trim($(n).html()) == val){
+				$(n).css("color","#BBD9F7");
+			}
+		});
+	}
 }
-function changeCityContent(cid){
+function changeCityContent(cid,val){
 	$("#center_content").load("ajax/getArticleList?page=1&cityid="+cid);
-	changeCity();
+	changeCity(val);
 }
 </script>
