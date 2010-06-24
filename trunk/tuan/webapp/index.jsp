@@ -9,6 +9,7 @@
 <meta name="Keywords" content="">
 <link href="css/index.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/boxOver.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 </head>
 
