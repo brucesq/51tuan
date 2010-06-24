@@ -125,4 +125,11 @@ public class StringUtil {
 		for (; str.endsWith(trimStr); str = str.substring(0, str.length() - trimStr.length()).trim());
 		return str;
 	}
+	
+	public static int getRandom(int start, int end) {
+		Double l = Math.random();
+		Integer lv = end - start;
+		Double k = l * lv;
+		return start + k.intValue();
+	}
 }

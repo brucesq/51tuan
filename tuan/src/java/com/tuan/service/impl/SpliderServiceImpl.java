@@ -11,6 +11,7 @@ import com.hunthawk.framework.hibernate.HibernateExpression;
 import com.tuan.domain.Article;
 import com.tuan.domain.SpliderItem;
 import com.tuan.service.SpliderService;
+import com.tuan.util.StringUtil;
 
 /**
  * @author sunquanzhi
@@ -30,6 +31,7 @@ public class SpliderServiceImpl implements SpliderService {
 	}
 
 	public void addArticle(Article article) {
+		article.setOlderNum(StringUtil.getRandom(10, 30));
 		controller.save(article);
 	}
 
