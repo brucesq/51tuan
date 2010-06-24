@@ -37,8 +37,8 @@ public class Feedback {
 	@Column(name = "content")
 	private String content;
 
-	@Column(name = "create_date")
-	private Date createDate;
+	@Column(name = "create_time")
+	private Date createTime;
 
 	public Integer getId() {
 		return id;
@@ -64,12 +64,12 @@ public class Feedback {
 		this.content = content;
 	}
 
-	public Date getCreateDate() {
-		return createDate;
+	public Date getCreateTime() {
+		return createTime;
 	}
 
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 
 }
