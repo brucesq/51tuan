@@ -1,8 +1,8 @@
 <ul class="list-h">
 #foreach( $article in $newList )
 <li>
-<div class="p-img"><a target="_blank" href="${article.url}"><img src="${article.imgurl}" alt="${article.name}" height="122" width="202"></a></div>
-<div class="p-name"><a target="_blank" href="${article.url}">${article.name}</a></div>
+<div class="p-img"><a target="_blank"  onclick="addVisit('${article.url}','${article.id}')" href="${article.url}" ><img src="${article.imgurl}" alt="${article.name}" height="122" width="202"></a></div>
+<div class="p-name"><a target="_blank" onclick="addVisit('${article.url}','${article.id}')" href="${article.url}">${article.name}</a></div>
 <div class="p-price">
 	<table>
 		<tr>

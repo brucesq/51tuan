@@ -17,6 +17,8 @@
 	  <bean id="authService" class="com.tuan.service.impl.AuthenticationServiceImpl" /> 
 	
   	 <bean id="getArticleListAction" class="com.tuan.web.action.GetArticleListAction" /> 
+  	 <bean id="addVisitAction" class="com.tuan.web.action.AddVisitAction" /> 
+  	 
   	 <bean id="loginAction" class="com.tuan.web.action.admin.LoginAction" /> 
   	 
   	 <bean id="getSpliderItemsAction" class="com.tuan.web.action.admin.GetSpliderItemsAction" /> 

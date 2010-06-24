@@ -53,10 +53,11 @@ public class AjaxServlet extends BaseServlet {
         		throw new WebException("Servlet URL did not contain command args: " + uri);
         	}
         	String actionName = tokens[1];
+//        	System.out.println("ex:"+actionName);
         	AjaxAction command = getAction(request.getSession().getServletContext(),actionName);
         	if(command == null)
         		throw new WebException("Unrecognised command received: " + actionName);
-//        	System.out.println("ex:"+actionName);
+
         	command.execute(request, response);
         }catch(Exception e){
         	handleError(response,e);
