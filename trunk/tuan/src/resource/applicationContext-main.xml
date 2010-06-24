@@ -69,6 +69,7 @@
 				<value>com.tuan.domain.Category</value>
 				<value>com.tuan.domain.Article</value>
 				<value>com.tuan.domain.SpliderItem</value>
+				<value>com.tuan.domain.Feedback</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -88,7 +89,7 @@
 					org.hibernate.cache.EhCacheProvider
 				</prop>
 				<prop key="hibernate.cache.use_query_cache">true</prop>
-		   	   <!--  <prop key="hibernate.hbm2ddl.auto">update</prop> --> 
+		   	    <!--  <prop key="hibernate.hbm2ddl.auto">update</prop> -->  
 			</props>
 		</property>
 		<property name="entityCacheStrategies">
