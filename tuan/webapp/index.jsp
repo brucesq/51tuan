@@ -1,7 +1,7 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html id="html" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>百团网</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -13,7 +13,7 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 </head>
 
-<body class="index">
+<body id="body" class="index">
 
 <div class="w" style="text-align:right;font-size:14px;font-family:宋体">“百团大战”吹响团购-集结号</div>
 <div class="w">
@@ -194,12 +194,35 @@
 
 <div class="w">
 	<div class="footer">
-		<a href="#" target="_blank">关于我们</a>|
+		<a href="javascript:void(0);" onclick="openFeedback();">意见反馈</a>|
 		<a href="#" target="_blank">联系我们</a>|
 		<a href="#" target="_blank">友情链接</a>
 	</div>
 	<div class="copyright">Copyright&#169;2010-2012&nbsp;&nbsp;百团网&nbsp;版权所有
 	</div>
+</div>
+
+<div id="mask"></div>
+<div id="feedback">
+	<table width="100%" height="100%">
+		<tr>
+			<td colspan="2" height="20px" style="background-color: #FFFFFF;padding-left:20px;">请填写以下信息：</td>
+		</tr>
+		<tr>
+			<td align="right" width="100px" height="30px" style="color:#FFF;">您的称呼：</td>
+			<td><input id="name" class="text" type="text" /></td>
+		</tr>
+		<tr>
+			<td align="right" height="100px" style="color:#FFF;">您的意见：</td>
+			<td><textarea id="content" cols="26" rows="4"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" class="button" value="确认" onclick="checkFeedback();"/>&nbsp;&nbsp;
+				<input type="button" class="button" value="取消" onclick="closeFeedback();"/>
+			</td>
+		</tr>				
+	</table>
 </div>
 
 </body>
@@ -231,5 +254,41 @@ function changeCity(val){
 function changeCityContent(cid,val){
 	$("#center_content").load("ajax/getArticleList?page=1&cityid="+cid);
 	changeCity(val);
+}
+function openFeedback(){
+	$("#html").css("overflow","hidden");
+	$("#body").css("overflow","hidden");
+	$("#feedback").css("left",$(window).width()/2-180);
+	$("#feedback").css("top",$(window).height()/2-80);	
+	$("#mask").show();
+	$("#feedback").show();	
+}
+function closeFeedback(){
+	$("#html").css("overflow","");
+	$("#body").css("overflow","");
+	$("#feedback").hide();  
+	$("#mask").hide();  
+}
+function checkFeedback(){
+	var name = $.trim($("#name").val());
+	var content = $.trim($("#content").val());
+	if(name == ''){
+		alert("请填写称呼");
+		return false;
+	}
+	if(content == ''){
+		alert("请填写意见");
+		return false;
+	}
+	if(name.length > 20){
+		alert("称呼最多20个字符");
+		return false;
+	}
+	if(content.length > 200){
+		alert("意见最多200个字符");
+		return false;
+	}
+	addFeedback(name,content);
+	closeFeedback();
 }
 </script>
