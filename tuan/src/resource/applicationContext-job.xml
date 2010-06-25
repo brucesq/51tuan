@@ -68,4 +68,10 @@
 
 <bean id="nuomiParser" class="com.tuan.splider.parser.NuomiParser" />
 
+<bean id="t58Parser" class="com.tuan.splider.parser.T58Parser" />
+
+<bean id="aibangParser" class="com.tuan.splider.parser.AibangParser" />
+
+<bean id="kutuanParser" class="com.tuan.splider.parser.KutuanParser" />
+
 </beans>
