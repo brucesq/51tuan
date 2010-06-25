@@ -66,4 +66,6 @@
 
 <bean id="ftuanParser" class="com.tuan.splider.parser.FtuanParser" />
 
+<bean id="nuomiParser" class="com.tuan.splider.parser.NuomiParser" />
+
 </beans>
