@@ -26,4 +26,13 @@
   	 <bean id="getAdminArticlesAction" class="com.tuan.web.action.admin.GetAdminArticlesAction" /> 
   	 
   	 <bean id="editArticleItemAction" class="com.tuan.web.action.admin.EditArticleItemAction" /> 
+  	 
+  	 <bean id="addFeedbackAction" class="com.tuan.web.action.AddFeedbackAction" /> 
+  	 
+  	 <bean id="feedbackService"
+		class="com.tuan.service.impl.FeedbackServiceImpl">
+		<property name="hibernateGenericController">
+			<ref bean="hibernateGenericController" />
+		</property>
+	</bean>
 </beans>
