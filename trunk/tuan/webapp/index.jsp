@@ -259,7 +259,7 @@ function openFeedback(){
 	$("#html").css("overflow","hidden");
 	$("#body").css("overflow","hidden");
 	$("#feedback").css("left",$(window).width()/2-180);
-	$("#feedback").css("top",$(window).height()/2-80);	
+	$("#feedback").css("top",$(window).height()/2-100);	
 	$("#mask").show();
 	$("#feedback").show();	
 }
