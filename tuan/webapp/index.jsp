@@ -102,10 +102,13 @@
 		</div>
 		<div style="margin-top:15px;padding-left:15px;">
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.meituan.com/beijing" style="font-size:24px;font-family:华文彩云">美团网</a></div>
+				<div><a target="_blank" href="http://www.nuomi.com/" style="font-size:24px;font-family:华文彩云">糯米网</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.lashou.com/beijing" style="font-size:24px;font-family:华文彩云">拉手网</a></div>
+				<div><a target="_blank" href="http://www.meituan.com/" style="font-size:24px;font-family:华文彩云">美团网</a></div>
+			</div>
+			<div style="margin:5px;">
+				<div><a target="_blank" href="http://www.lashou.com/" style="font-size:24px;font-family:华文彩云">拉手网</a></div>
 			</div>
 			<div style="margin:5px;">
 				<div><a target="_blank" href="http://t.58.com/index_cbj.html" style="font-size:24px;font-family:华文彩云">58团购</a></div>
