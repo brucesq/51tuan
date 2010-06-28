@@ -51,7 +51,7 @@ a:active{color:#900;}
 #cityList li{float:left;width:60px;text-decoration:none;text-align:center;cursor:pointer;}
 
 /*share*/
-.share_span{margin-left:120px;font-size:12px;}
+.share_span{margin-left:80px;font-size:12px;}
 .share_span a{color:#FFF;}
 .share_qq{padding-left:22px;font-size:12px;background:url(../image/share_qq.png) no-repeat 0 center;margin-right:5px;}
 .share_sina{padding-left:24px;font-size:12px;background:url(../image/share_sina.png) no-repeat 0 center;margin-right:5px;}
