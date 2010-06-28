@@ -172,6 +172,8 @@ public class FtuanParser  implements ArticleParser {
 			for(int i=0;i<str.length();i++){
 				if(StringUtils.isNumeric(""+str.charAt(i))){
 					price += str.charAt(i);
+				}else if('-' == str.charAt(i) || '.'==str.charAt(i)){
+					price += str.charAt(i);
 				}else{
 					continue;
 				}
@@ -185,7 +187,7 @@ public class FtuanParser  implements ArticleParser {
 	public static void main(String[] args) throws Exception {
 
 		FtuanParser p = new FtuanParser();
-		p.parse("http://www.ftuan.com/index.php", 1, 1);
+		p.parse("http://www.ftuan.com/index.php", 2, 1);
 
 	}
 }

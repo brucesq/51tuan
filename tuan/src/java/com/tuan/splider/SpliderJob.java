@@ -5,6 +5,7 @@ package com.tuan.splider;
 
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -44,6 +45,10 @@ public class SpliderJob implements ApplicationContextAware {
 			ArticleParser parser = (ArticleParser)ac.getBean(item.getParserName());
 			try{
 				Article article = parser.parse(item.getUrl(), item.getCityId(), item.getFromId());
+				if(StringUtils.isEmpty(article.getName())){
+					System.out.println(item.getId()+" has not");
+					continue;
+				}
 				spliderService.addArticle(article);
 				Thread.sleep(100);
 			}catch(Exception e){
