@@ -59,14 +59,14 @@ public class JiapintuanParser  implements ArticleParser {
 		int index = content.indexOf("id=\"deal-intro\"");
 		if (index > 0) {
 			content = content.substring(index + 15);
-			index = content.indexOf("<h1>");
+			index = content.indexOf("</a>");
 			
 			if (index >= 0) {
 				content = content.substring(index + 4);
 			
 				index = content.indexOf("</h1>");
 				String title = content.substring(0, index);
-				 System.out.println(title);
+//				 System.out.println(title);
 				article.setName(title);
 			}
 
@@ -81,7 +81,7 @@ public class JiapintuanParser  implements ArticleParser {
 				String nowPrice = content.substring(0, index);
 				content = content.substring(index + 9);
 				nowPrice = getPrice(nowPrice);
-				System.out.println(nowPrice);
+//				System.out.println(nowPrice);
 				article.setNowPrice(nowPrice);
 				index = content.indexOf("class=\"deal-discount\"");
 				if (index > 0) {
@@ -94,7 +94,7 @@ public class JiapintuanParser  implements ArticleParser {
 						index = content.indexOf("</td>");
 						String oldPrice = content.substring(0, index);
 						oldPrice = getPrice(oldPrice);
-						 System.out.println(oldPrice);
+//						 System.out.println(oldPrice);
 						article.setOriginalPrice(oldPrice);
 
 					}
@@ -103,7 +103,7 @@ public class JiapintuanParser  implements ArticleParser {
 						content = content.substring(index + 4);
 						index = content.indexOf("</td>");
 						String discount = content.substring(0, index);
-						 System.out.println(discount);
+//						 System.out.println(discount);
 						article.setDiscount(discount);
 
 					}
@@ -114,7 +114,7 @@ public class JiapintuanParser  implements ArticleParser {
 						index = content.indexOf("</td>");
 						String saveMoney = content.substring(0, index);
 						saveMoney = getPrice(saveMoney);
-						 System.out.println(saveMoney);
+//						 System.out.println(saveMoney);
 						article.setSaveMoney(saveMoney);
 
 					}
@@ -125,7 +125,7 @@ public class JiapintuanParser  implements ArticleParser {
 						content = content.substring(index + 5);
 						index = content.indexOf("\"");
 						String url = content.substring(0, index);
-						 System.out.println(url);
+//						 System.out.println(url);
 						article.setImgurl( url);
 					}
 				}
