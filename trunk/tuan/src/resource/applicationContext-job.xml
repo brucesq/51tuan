@@ -74,4 +74,6 @@
 
 <bean id="kutuanParser" class="com.tuan.splider.parser.KutuanParser" />
 
+<bean id="sohutuanParser" class="com.tuan.splider.parser.SohutuanParser" />
+
 </beans>
