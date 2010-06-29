@@ -199,7 +199,7 @@
 <div class="w">
 	<div class="footer">
 		<a href="javascript:void(0);" onclick="openFeedback();">意见反馈</a>|
-		<a href="#" target="_blank">联系我们</a>|
+		<a href="javascript:void(0);" onclick="openAboutme();">关于我们</a>|
 		<a href="#" target="_blank">友情链接</a>
 	</div>
 	<div class="copyright">Copyright&#169;2010-2012&nbsp;&nbsp;百团网&nbsp;版权所有
@@ -224,6 +224,28 @@
 			<td colspan="2" align="center">
 				<input type="button" class="button" value="确认" onclick="checkFeedback();"/>&nbsp;&nbsp;
 				<input type="button" class="button" value="取消" onclick="closeFeedback();"/>
+			</td>
+		</tr>				
+	</table>
+</div>
+<div id="aboutme">
+	<table width="100%" height="100%">
+		<tr>
+			<td height="20px" style="background-color: #FFFFFF;padding-left:20px;">关于我们：</td>
+		</tr>
+		<tr>
+			<td height="100px" style="padding-left:20px;color:#FFF;">
+				<p>
+				百团 = 高端团购<br/>
+				百团 = 放心团购<br/>
+				百团 = 一眼挑选你所要的团购<br/>
+				百团网是一家高端放心团购搜索引擎。每天跟踪中国数百个团购网站，及时更新各大团购网站动态，第一时间发布最新团购信息。	
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input type="button" class="button" value="关闭" onclick="closeAboutme();"/>
 			</td>
 		</tr>				
 	</table>
@@ -271,6 +293,20 @@ function closeFeedback(){
 	$("#html").css("overflow","");
 	$("#body").css("overflow","");
 	$("#feedback").hide();  
+	$("#mask").hide();  
+}
+function openAboutme(){
+	$("#html").css("overflow","hidden");
+	$("#body").css("overflow","hidden");
+	$("#aboutme").css("left",$(window).width()/2-180);
+	$("#aboutme").css("top",$(window).height()/2-100);	
+	$("#mask").show();
+	$("#aboutme").show();	
+}
+function closeAboutme(){
+	$("#html").css("overflow","");
+	$("#body").css("overflow","");
+	$("#aboutme").hide();  
 	$("#mask").hide();  
 }
 function checkFeedback(){
