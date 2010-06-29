@@ -76,4 +76,6 @@
 
 <bean id="sohutuanParser" class="com.tuan.splider.parser.SohutuanParser" />
 
+<bean id="fantongParser" class="com.tuan.splider.parser.FantongParser" />
+
 </beans>
