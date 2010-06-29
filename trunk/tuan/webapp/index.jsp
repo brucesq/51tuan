@@ -1,5 +1,7 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ page import="com.tuan.web.framework.AuthenticationHelper" %>
+<%@page import="com.tuan.domain.Constants;"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="html" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -33,7 +35,7 @@
 			<span class="clr"></span>
 			<div id="cityList">
 				<ul>
-					<li onclick="changeCityContent(1,'北京');" style="color:#BBD9F7;">北京</li>
+					<li onclick="changeCityContent(1,'北京');" >北京</li>
 					<li onclick="changeCityContent(2,'上海');">上海</li>
 					<li onclick="changeCityContent(7,'武汉');">武汉</li>
 					<li onclick="changeCityContent(4,'广州');">广州</li>
@@ -256,8 +258,9 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
+	changeCityContent(<%= AuthenticationHelper.getCityId(request) %>,'<%= Constants.getCityName(AuthenticationHelper.getCityId(request)) %>')
 	$("#top_content").load("ajax/getArticleList?page=1&type=1");
-	$("#center_content").load("ajax/getArticleList?page=1&cityid=1");
+	
 });
 
 function changeCity(val){
