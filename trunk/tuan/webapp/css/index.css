@@ -46,12 +46,12 @@ a:active{color:#900;}
 .copyright{margin-top:10px;font-family:arial;text-align:center;font-size:12px;font-weight:normal;padding-bottom:30px;}
 
 /*change city*/
-#cityList{display:none;clear:both;position:absolute;z-index:2;width:420px;padding:10px;background:#5F5F5F;margin-top:10px;}
+#cityList{clear:both;position:absolute;z-index:2;width:420px;padding:10px;background:#5F5F5F;margin-top:10px;}
 #cityList ul{list-style-type:none;margin:0;padding:0;}
 #cityList li{float:left;width:60px;text-decoration:none;text-align:center;cursor:pointer;}
 
 /*share*/
-.share_span{margin-left:80px;font-size:12px;}
+.share_span{margin-left:60px;font-size:12px;}
 .share_span a{color:#FFF;}
 .share_qq{padding-left:22px;font-size:12px;background:url(../image/share_qq.png) no-repeat 0 center;margin-right:5px;}
 .share_sina{padding-left:24px;font-size:12px;background:url(../image/share_sina.png) no-repeat 0 center;margin-right:5px;}
