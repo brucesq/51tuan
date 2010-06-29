@@ -78,8 +78,7 @@ public class Constants {
 	
 	public static String getCityName(String cityId) {
 		for (Map.Entry<String, Integer> entry : CITY_ID.entrySet()) {
-			if (entry.getValue().equals(cityId)) {
-//				System.out.println(entry.getKey()+":"+cityId);
+			if (entry.getValue().toString().equals(cityId)) {
 				return entry.getKey();
 			}
 		}
