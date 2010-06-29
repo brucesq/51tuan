@@ -75,5 +75,15 @@ public class Constants {
 			FROM_PARSER.put(kv[0], kv[1]);
 		}
 	}
+	
+	public static String getCityName(String cityId) {
+		for (Map.Entry<String, Integer> entry : CITY_ID.entrySet()) {
+			if (entry.getValue().equals(cityId)) {
+//				System.out.println(entry.getKey()+":"+cityId);
+				return entry.getKey();
+			}
+		}
+		return "";
+	}
 
 }
