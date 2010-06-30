@@ -203,7 +203,7 @@
 	<div class="footer">
 		<a href="javascript:void(0);" onclick="openFeedback();">意见反馈</a>|
 		<a href="javascript:void(0);" onclick="openAboutme();">关于我们</a>|
-		<a href="#" target="_blank">友情链接</a>
+		<a href="javascript:void(0);" onclick="openContactme();">联系我们</a>
 	</div>
 	<div class="copyright">Copyright&#169;2010-2012&nbsp;&nbsp;百团网&nbsp;版权所有
 	</div>
@@ -242,13 +242,52 @@
 				百团 = 高端团购<br/>
 				百团 = 放心团购<br/>
 				百团 = 一眼挑选你所要的团购<br/>
-				百团网是一家高端放心团购搜索引擎。每天跟踪中国数百个团购网站，及时更新各大团购网站动态，第一时间发布最新团购信息。	
+				百团网是一家高端放心团购搜索引擎。每天跟踪中国数百个团购网站，及时更新各大团购网站动态，第一时间发布最新团购信息。
+				</p>
+				<p>
+				百团网讯科技(北京)有限公司<br/>
+				www.100grouper.com	
 				</p>
 			</td>
 		</tr>
 		<tr>
 			<td align="center">
 				<input type="button" class="button" value="关闭" onclick="closeAboutme();"/>
+			</td>
+		</tr>				
+	</table>
+</div>
+<div id="contactme">
+	<table width="100%" height="100%">
+		<tr>
+			<td height="20px" style="background-color: #FFFFFF;padding-left:20px;">联系我们：</td>
+		</tr>
+		<tr>
+			<td height="100px" style="padding-left:20px;color:#FFF;">
+				<p>
+				如果您有任何意见和建议，请联系我们：
+				</p>
+				<p>
+				E-mail：contact@100grouper.com<br/>
+				QQ服务：28429091
+				</p>
+				<p>
+				广告业务联系：<br/>
+				E-mail：ad@100grouper.com
+				</p>
+				<p>
+				人才招聘：<br/>
+				E-mail：hr@100grouper.com
+				</p>
+				<p>
+				百团网讯科技(北京)有限公司<br/>
+				www.100grouper.com	
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input type="button" class="button" value="关闭" onclick="closeContactme();"/>
 			</td>
 		</tr>				
 	</table>
@@ -303,7 +342,7 @@ function openAboutme(){
 	$("#html").css("overflow","hidden");
 	$("#body").css("overflow","hidden");
 	$("#aboutme").css("left",$(window).width()/2-180);
-	$("#aboutme").css("top",$(window).height()/2-100);	
+	$("#aboutme").css("top",$(window).height()/2-140);	
 	$("#mask").show();
 	$("#aboutme").show();	
 }
@@ -311,6 +350,20 @@ function closeAboutme(){
 	$("#html").css("overflow","");
 	$("#body").css("overflow","");
 	$("#aboutme").hide();  
+	$("#mask").hide();  
+}
+function openContactme(){
+	$("#html").css("overflow","hidden");
+	$("#body").css("overflow","hidden");
+	$("#contactme").css("left",$(window).width()/2-180);
+	$("#contactme").css("top",$(window).height()/2-180);	
+	$("#mask").show();
+	$("#contactme").show();
+}
+function closeContactme(){
+	$("#html").css("overflow","");
+	$("#body").css("overflow","");
+	$("#contactme").hide();  
 	$("#mask").hide();  
 }
 function checkFeedback(){
