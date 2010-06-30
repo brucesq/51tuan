@@ -31,7 +31,8 @@ public class SpliderServiceImpl implements SpliderService {
 	}
 
 	public List<SpliderItem> getSpliderItems() {
-		return controller.getAll(SpliderItem.class);
+		Collection<HibernateExpression> expressions = new ArrayList<HibernateExpression>();
+		return controller.findBy(SpliderItem.class, 1, 100000, "id",true, expressions);
 	}
 
 	public void addArticle(Article article) {
