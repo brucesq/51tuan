@@ -53,6 +53,7 @@
 					<li onclick="changeCityContent(24,'石家庄');">石家庄</li>
 					<li onclick="changeCityContent(11,'大连');">大连</li>
 					<li onclick="changeCityContent(17,'青岛');">青岛</li>
+					<li onclick="changeCityContent(26,'南昌');">南昌</li>
 				</ul>
 			</div>
 		</div>
@@ -114,16 +115,16 @@
 				<div><a target="_blank" href="http://www.lashou.com/" style="font-size:24px;font-family:华文彩云">拉手网</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://t.58.com/index_cbj.html" style="font-size:24px;font-family:华文彩云">58团购</a></div>
+				<div><a target="_blank" href="http://t.58.com/" style="font-size:24px;font-family:华文彩云">58团购</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.manzuo.com/his/musicboxktv__xNcQ4Q_HiVw.htm" style="font-size:24px;font-family:华文彩云">满座网</a></div>
+				<div><a target="_blank" href="http://www.manzuo.com/" style="font-size:24px;font-family:华文彩云">满座网</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.24quan.com/index.php" style="font-size:24px;font-family:华文彩云">24券</a></div>
+				<div><a target="_blank" href="http://www.24quan.com/" style="font-size:24px;font-family:华文彩云">24券</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.ftuan.com/index.php" style="font-size:24px;font-family:华文彩云">F团</a></div>
+				<div><a target="_blank" href="http://www.ftuan.com/" style="font-size:24px;font-family:华文彩云">F团</a></div>
 			</div>
 			<div style="margin:5px;">
 				<div><a target="_blank" href="http://www.aibang.com/" style="font-size:24px;font-family:华文彩云">爱帮网</a></div>
@@ -132,10 +133,10 @@
 				<div><a target="_blank" href="http://www.jiapintuan.com/" style="font-size:24px;font-family:华文彩云">佳品团</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.liketuan.com/index.php?m=Goods&a=show&id=138" style="font-size:24px;font-family:华文彩云">橘子团</a></div>
+				<div><a target="_blank" href="http://www.liketuan.com/" style="font-size:24px;font-family:华文彩云">橘子团</a></div>
 			</div>
 			<div style="margin:5px;">
-				<div><a target="_blank" href="http://www.cocotuan.com/Product/75-ShangYuZuoTaQingYuGuo.aspx" style="font-size:24px;font-family:华文彩云">可可团</a></div>
+				<div><a target="_blank" href="http://www.cocotuan.com/" style="font-size:24px;font-family:华文彩云">可可团</a></div>
 			</div>
 			<div style="margin:5px;">
 				<div><a target="_blank" href="http://www.360buy.com" style="font-size:24px;font-family:华文彩云">京东商城</a></div>
