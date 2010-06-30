@@ -132,4 +132,25 @@ public class StringUtil {
 		Double k = l * lv;
 		return start + k.intValue();
 	}
+	
+	public static String trimHref(String str){
+		if(str == null){
+			return str;
+		}
+		StringBuilder builder = new StringBuilder();
+		int index = str.indexOf("<a");
+		if(index >= 0){
+			builder.append(str.substring(0, index));
+			index = str.indexOf(">");
+			builder.append((str.substring(index+1)).replaceAll("</a>", ""));
+			return builder.toString();
+		}else{
+			return str.replaceAll("</a>", "");
+		}
+	}
+	
+	public static void main(String[] args){
+		String s = "asd <a href=\"http://asda.sd.com\">asdasd</a>";
+		System.out.println(trimHref(s));
+	}
 }

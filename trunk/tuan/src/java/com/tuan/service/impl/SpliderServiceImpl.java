@@ -32,6 +32,7 @@ public class SpliderServiceImpl implements SpliderService {
 
 	public void addArticle(Article article) {
 		article.setOlderNum(StringUtil.getRandom(50, 300));
+		article.setName(StringUtil.trimHref(article.getName()));
 		controller.save(article);
 	}
 
