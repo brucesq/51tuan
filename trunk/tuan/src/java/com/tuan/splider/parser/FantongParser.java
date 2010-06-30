@@ -126,7 +126,12 @@ public class FantongParser  implements ArticleParser {
 						index = content.indexOf("\"");
 						String url = content.substring(0, index);
 //						 System.out.println("http://tuan.fantong.com"+ url);
-						article.setImgurl("http://tuan.fantong.com"+ url);
+						if(url.indexOf("http")>=0){
+							article.setImgurl( url);
+						}else{
+							article.setImgurl("http://tuan.fantong.com"+ url);
+						}
+						
 					}
 				}
 			}

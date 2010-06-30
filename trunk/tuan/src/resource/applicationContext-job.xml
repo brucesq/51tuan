@@ -14,7 +14,11 @@
 		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
 		<property name="triggers">
 			<list>
+				<ref bean="spliderJobTrigger4" />
 				<ref bean="spliderJobTrigger" />
+				<ref bean="spliderJobTrigger10" />
+				<ref bean="spliderJobTrigger12" />
+				<ref bean="spliderJobTrigger15" />
 			</list>
 		</property>
 	</bean>
@@ -39,10 +43,34 @@
 		<property name="concurrent" value="false" />
 	</bean>
 
+	<bean id="spliderJobTrigger4"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="spliderJob" />
+		<property name="cronExpression" value="0 3 4 * * ?" />
+	</bean>
+
 	<bean id="spliderJobTrigger"
 		class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="spliderJob" />
-		<property name="cronExpression" value="0 0 7 * * ?" />
+		<property name="cronExpression" value="0 8 7 * * ?" />
+	</bean>
+	
+	<bean id="spliderJobTrigger10"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="spliderJob" />
+		<property name="cronExpression" value="0 0 10 * * ?" />
+	</bean>
+	
+	<bean id="spliderJobTrigger12"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="spliderJob" />
+		<property name="cronExpression" value="0 08 12 * * ?" />
+	</bean>
+	
+	<bean id="spliderJobTrigger15"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="spliderJob" />
+		<property name="cronExpression" value="0 03 15 * * ?" />
 	</bean>
 
 
