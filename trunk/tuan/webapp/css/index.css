@@ -77,5 +77,8 @@ a:active{color:#900;}
 	margin-top:-3px;
 }
 
-#aboutme{display: none;width:360px;height:200px;z-index:10;position:absolute;background-color: #BBD9F7;border: 1px solid #BBD9F7;}
+#aboutme{display: none;width:360px;height:280px;z-index:10;position:absolute;background-color: #BBD9F7;border: 1px solid #BBD9F7;}
 #aboutme .button{width: 80px;height: 18px;font-size: 12px;background-color: #FFFFFF;border: 1px solid #DFC382;}
+
+#contactme{display: none;width:360px;height:360px;z-index:10;position:absolute;background-color: #BBD9F7;border: 1px solid #BBD9F7;}
+#contactme .button{width: 80px;height: 18px;font-size: 12px;background-color: #FFFFFF;border: 1px solid #DFC382;}
