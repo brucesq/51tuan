@@ -49,7 +49,8 @@ public class SpliderJob implements ApplicationContextAware {
 					System.out.println(item.getId()+" has not");
 					continue;
 				}
-				spliderService.addArticle(article);
+				
+				spliderService.updateArticle(article);
 				Thread.sleep(100);
 			}catch(Exception e){
 				e.printStackTrace();

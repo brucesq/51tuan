@@ -19,6 +19,8 @@ public interface SpliderService {
 	public List<SpliderItem> getSpliderItems();
 
 	public void addArticle(Article article);
+	
+	public void updateArticle(Article article);
 
 	public List<Article> getArticleList(int pageNo, int pageSize,
 			String orderBy, boolean isAsc,

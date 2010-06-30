@@ -57,7 +57,7 @@ public class GetArticleListAction extends BaseAction {
 				cid = getCityId(request);
 			}
 			ex.add(new CompareExpression("cityId",cid,CompareType.Equal));
-			newList = spliderService.getArticleList(page,12,"id",false,ex);
+			newList = spliderService.getArticleList(page,24,"id",false,ex);
 		}
 		
 		Map<String, Object> map = new HashMap<String,Object>(); 

@@ -3,10 +3,14 @@
  */
 package com.tuan.service.impl;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import com.hunthawk.framework.HibernateGenericController;
+import com.hunthawk.framework.hibernate.CompareExpression;
+import com.hunthawk.framework.hibernate.CompareType;
 import com.hunthawk.framework.hibernate.HibernateExpression;
 import com.tuan.domain.Article;
 import com.tuan.domain.SpliderItem;
@@ -36,6 +40,26 @@ public class SpliderServiceImpl implements SpliderService {
 		controller.save(article);
 	}
 
+	public void updateArticle(Article article){
+		Collection<HibernateExpression> expressions = new ArrayList<HibernateExpression>();
+		expressions.add(new CompareExpression("endTime",article.getEndTime(),CompareType.Equal));
+		expressions.add(new CompareExpression("cityId",article.getCityId(),CompareType.Equal));
+		expressions.add(new CompareExpression("fromId",article.getFromId(),CompareType.Equal));
+		expressions.add(new CompareExpression("url",article.getUrl(),CompareType.Equal));
+		List<Article> articles = controller.findBy(Article.class, 1, 1, "id",
+				false, expressions);
+		if(articles.size() > 0){
+			article.setName(StringUtil.trimHref(article.getName()));
+			article.setOlderNum(articles.get(0).getOlderNum());
+			article.setId(articles.get(0).getId());
+			controller.update(article);
+//			System.out.println("UPDATE:"+article.getId());
+		}else{
+			addArticle(article);
+//			System.out.println("ADD:"+article.getId());
+		}
+	}
+	
 	public List<Article> getArticleList(int pageNo, int pageSize,
 			String orderBy, boolean isAsc,
 			Collection<HibernateExpression> expressions) {
