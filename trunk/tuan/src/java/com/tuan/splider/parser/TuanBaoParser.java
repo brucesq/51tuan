@@ -119,12 +119,26 @@ public class TuanBaoParser   implements ArticleParser{
 					index = content.indexOf("class=photos");
 					if(index >= 0){
 						content = content.substring(index+12);
-						index = content.indexOf("src=\"");
-						content = content.substring(index+5);
-						index= content.indexOf("\"");
-						String url = content.substring(0,index);
-//						System.out.println("http://www.groupon.cn"+url);
-						article.setImgurl("http://www.groupon.cn"+url);
+						index = content.indexOf("pics='");
+						int idx = content.indexOf("<img");
+						if(index <idx){
+//							System.out.println(content);
+							content = content.substring(index+6);
+							index = content.indexOf("'");
+							String url = content.substring(0,index);
+//							System.out.println("URL:"+url);
+							String[] urls = url.split("\\|");
+//							System.out.println("http://www.groupon.cn"+urls[0]);
+							article.setImgurl("http://www.groupon.cn"+urls[0]);
+						}else{
+							index = content.indexOf("src=\"");
+							content = content.substring(index+5);
+							index= content.indexOf("\"");
+							String url = content.substring(0,index);
+//							System.out.println("http://www.groupon.cn"+url);
+							article.setImgurl("http://www.groupon.cn"+url);
+						}
+						
 					}
 				}
 			}
