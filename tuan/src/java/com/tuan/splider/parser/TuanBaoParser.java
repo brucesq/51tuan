@@ -120,8 +120,11 @@ public class TuanBaoParser   implements ArticleParser{
 					if(index >= 0){
 						content = content.substring(index+12);
 						index = content.indexOf("pics='");
-						int idx = content.indexOf("<img");
-						if(index <idx){
+						int idx = content.indexOf("<IMG");
+						if(idx < 0){
+							idx = content.indexOf("<img");
+						}
+						if(index <idx && index > 0){
 //							System.out.println(content);
 							content = content.substring(index+6);
 							index = content.indexOf("'");
