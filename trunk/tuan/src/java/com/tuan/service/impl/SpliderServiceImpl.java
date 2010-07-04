@@ -102,4 +102,12 @@ public class SpliderServiceImpl implements SpliderService {
 	public void editArticle(Article item){
 		controller.update(item);
 	}
+
+	@Override
+	public List<Article> getArticleDiscountList(int pageNo, int pageSize,
+			String orderBy, boolean isAsc,
+			Collection<HibernateExpression> expressions) {
+		return controller.findBy(Article.class, pageNo, pageSize, orderBy,
+				isAsc, expressions);
+	}
 }
