@@ -35,4 +35,6 @@
 			<ref bean="hibernateGenericController" />
 		</property>
 	</bean>
+	
+	<bean id="getArticleDiscountListAction" class="com.tuan.web.action.GetArticleDiscountListAction" /> 
 </beans>
