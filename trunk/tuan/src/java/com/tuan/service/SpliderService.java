@@ -43,4 +43,8 @@ public interface SpliderService {
 	public Article getArticle(Integer id);
 
 	public void editArticle(Article item);
+	
+	public List<Article> getArticleDiscountList(int pageNo, int pageSize,
+			String orderBy, boolean isAsc,
+			Collection<HibernateExpression> expressions);
 }
