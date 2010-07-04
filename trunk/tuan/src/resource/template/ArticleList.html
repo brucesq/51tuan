@@ -1,31 +1,36 @@
-<ul class="list-h">
 #foreach( $article in $newList )
-<li>
-<div class="p-img"><a target="_blank"  onclick="addVisit('${article.url}','${article.id}')" href="${article.url}" ><img src="${article.imgurl}" height="122" width="202"></a></div>
-<div class="p-name"><a target="_blank" onclick="addVisit('${article.url}','${article.id}')" href="${article.url}">${article.name}</a></div>
-<div class="p-price">
-	<table>
-		<tr>
-			<td width="50%">来自：${article.fromName}</td>
-			<td>地区：${article.cityName}</td>
-		</tr>
-		<tr>
-			<td>原价：￥${article.originalPrice}</td>
-			<td>现价：<strong>￥${article.nowPrice}</strong></td>
-		</tr>
-		<tr>
-			<td>折扣：${article.discount}</td>
-			<td>节省：<strong>￥${article.saveMoney}</strong></td>
-		</tr>
-		<tr>
-			<td>人气：${article.olderNum}</td>
-			<td>&nbsp;</td>
-		</tr>		
-	</table>
-</div>
-</li>
-	#if($velocityCount % 3 == 0)
-<span class="clr"></span>		
+	#if($velocityCount % 3 == 1)
+		#if($velocityCount >= $newList.size() - 2)
+<div class="main_mid_tdtg_product_dv_line2">		
+		#else
+<div class="main_mid_tdtg_product_dv_line">		
+		#end
 	#end
-#end
-</ul>    
+<div class="main_mid_tdtg_product_dv_line_dv">
+<a target="_blank"  onclick="addVisit('${article.url}','${article.id}')" href="${article.url}"><img src="${article.imgurl}" width="200" height="130" /></a>
+<a target="_blank"  onclick="addVisit('${article.url}','${article.id}')" href="${article.url}"><span style="font-weight:bold">${article.name}</span></a><br />
+<table width="100%">
+	<tr>
+		<td width="50%">来自：<span style="font-weight:bold">${article.fromName}</span></td>
+		<td>地区：${article.cityName}</td>
+	</tr>
+	<tr>
+		<td>原价：<span style="color:#FF3300;font-weight:bold">￥${article.originalPrice}</span></td>
+		<td>现价：<span style="color:#FF3300;font-weight:bold">￥${article.nowPrice}</span></td>
+	</tr>
+	<tr>
+		<td>折扣：<span style="color:#FF3300;font-weight:bold">${article.discount}</span></td>
+		<td>节省：<span style="color:#FF3300;font-weight:bold">￥${article.saveMoney} </span></td>
+	</tr>
+	<tr>
+		<td>人气：${article.olderNum}</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr><td colspan="2">&nbsp;</td></tr>
+</table>
+</div>
+	#if($velocityCount % 3 == 0 || $velocityCount == $newList.size())
+<span class="clr"></span>
+</div>
+	#end
+#end    
