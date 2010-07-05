@@ -283,7 +283,6 @@ Copyright&copy;2010-2099  www.100grouper.com 百团网 版权所有 京ICP备 �
 <script type="text/javascript">
 
 $(document).ready(function(){
-	$("#mask").css("height",$(document).height()+"px");
 	$("#cityList").css("display","block");
 	changeCityContent(<%= AuthenticationHelper.getCityId(request) %>,'<%= Constants.getCityName(AuthenticationHelper.getCityId(request)) %>');
 	$("#top_content").load("ajax/getArticleList?page=1&type=1");
@@ -292,6 +291,7 @@ $(document).ready(function(){
 function changeCity(val){
 	var obj = document.getElementById("cityList");
 	if(obj.style.display == 'none' || obj.style.display==''){
+		$("#mask").css("height",$(document).height()+"px");
 		$("#mask").show();
 		$("#cityList").css("left",$(window).width()/2-210);
 		$("#cityList").css("top",$(window).height()/2-80);
