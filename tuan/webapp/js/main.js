@@ -35,3 +35,27 @@ function bookmark(title, url){
 			window.sidebar.addPanel(title, url, "")
 	}
 }
+
+function changeCity(val){
+	var obj = document.getElementById("cityList");
+	if(obj.style.display == 'none' || obj.style.display==''){
+		$("#mask").css("height",$(document).height()+"px");
+		$("#mask").show();
+		$("#cityList").css("left",$(window).width()/2-210);
+		$("#cityList").css("top",$(window).height()/2-80);
+		obj.style.display="block";
+	}else if(obj.style.display == 'block'){
+		obj.style.display="none";
+		$("#mask").hide();
+	}
+	if(val != ''){
+		$("#city").html(val);
+		$("#cityList").find("li").each(function(i,n){
+			$(n).css("color","");
+			var str = $(n).html();
+			if($.trim($(n).html()) == val){
+				$(n).css("color","#BBD9F7");
+			}
+		});
+	}
+}
