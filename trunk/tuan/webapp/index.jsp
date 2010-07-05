@@ -100,23 +100,23 @@
 <div id="main_mid_tdtg">
 <div class="main_mid_tdtg_title">
 <div class="main_mid_tdtg_title_button0"></div>
-<div name="type" class="main_mid_tdtg_title_button1" type="2" onclick="switchCategory(this);">本地团购</div>
-<div name="type" class="main_mid_tdtg_title_button2" type="1" onclick="switchCategory(this);">全国信息</div>
+<div name="type" class="main_mid_tdtg_title_button1" type="2" onclick="switchCategory(2);">本地团购</div>
+<div name="type" class="main_mid_tdtg_title_button2" type="1" onclick="switchCategory(1);">全国信息</div>
 <!-- 
 <div class="main_mid_tdtg_title_button2">娱乐生活</div>
  -->
 </div>
 <div class="main_mid_tdtg_product">
 <div class="main_mid_tdtg_product_dv">
-<div id="content">
-</div>
-<!--
+<div id="center_content"></div>
+<div id="top_content"></div>
+
 <div class="main_mid_tdtg_product_dv_page">
 <div class="main_mid_tdtg_product_dv_page_one">首页</div>
-<div class="main_mid_tdtg_product_dv_page_pg">[1]&nbsp;&nbsp;[2]&nbsp;&nbsp;[3]&nbsp;&nbsp;[4]&nbsp;&nbsp;[5]</div>
+<div class="main_mid_tdtg_product_dv_page_pg">[1]<!-- &nbsp;&nbsp;[2]&nbsp;&nbsp;[3]&nbsp;&nbsp;[4]&nbsp;&nbsp;[5] --></div>
 <div class="main_mid_tdtg_product_dv_page_end">尾页</div>
 </div>
- -->
+
 </div>
 </div>
 </div>
@@ -286,6 +286,7 @@ $(document).ready(function(){
 	$("#mask").css("height",$(document).height()+"px");
 	$("#cityList").css("display","block");
 	changeCityContent(<%= AuthenticationHelper.getCityId(request) %>,'<%= Constants.getCityName(AuthenticationHelper.getCityId(request)) %>');
+	$("#top_content").load("ajax/getArticleList?page=1&type=1");
 });
 
 function changeCity(val){
@@ -310,14 +311,12 @@ function changeCity(val){
 	}
 }
 function changeCityContent(cid,val){
-	$("#content").load("ajax/getArticleList?page=1&cityid="+cid);
+	$("#center_content").load("ajax/getArticleList?page=1&cityid="+cid);
 	$("#discount").load("ajax/getArticleDiscountList?page=1&cityid="+cid);
 	changeCity(val);
+	switchCategory(2);
 }
-function switchCategory(obj){
-	if(obj.className == 'main_mid_tdtg_title_button1')
-		return false;
-	val = $(obj).attr("type");
+function switchCategory(val){
 	$("div").find("[name=type]").each(function(i,n){
 		$(n).removeClass("main_mid_tdtg_title_button1");
 		$(n).removeClass("main_mid_tdtg_title_button2");
@@ -327,10 +326,11 @@ function switchCategory(obj){
 			$(n).addClass("main_mid_tdtg_title_button2");
 	});
 	if(val == 1){
-		$("#content").load("ajax/getArticleList?page=1&type=1");
+		$("#center_content").hide();
+		$("#top_content").show();
 	}else{
-		$("#cityList").css("display","block");
-		changeCityContent(<%= AuthenticationHelper.getCityId(request) %>,'<%= Constants.getCityName(AuthenticationHelper.getCityId(request)) %>');		
+		$("#center_content").show();
+		$("#top_content").hide();		
 	}	
 }
 
