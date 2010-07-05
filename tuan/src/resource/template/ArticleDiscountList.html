@@ -4,7 +4,7 @@
     <td class="main_mid_yhzk_td2">节省</td>
   </tr>
 #foreach( $article in $newList )
-  <tr>
+  <tr #if($velocityCount % 2 == 0) style="background-color: #E0E0E0;" #end>
     <td class="main_mid_yhzk_td3"><a target="_blank"  onclick="addVisit('${article.url}','${article.id}')" href="${article.url}">${article.name}</a></td>
     <td class="main_mid_yhzk_td4">￥${article.saveMoney}</td>
   </tr>
