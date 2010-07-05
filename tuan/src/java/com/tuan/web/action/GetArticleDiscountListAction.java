@@ -52,7 +52,7 @@ public class GetArticleDiscountListAction extends BaseAction{
 			String cityId = request.getParameter("cityid");
 			if(StringUtils.isNotEmpty(cityId)){
 				cid = Integer.parseInt(cityId); 
-				changeCityId(request,response,cid);
+				//changeCityId(request,response,cid);
 			}else{
 				cid = getCityId(request);
 			}
