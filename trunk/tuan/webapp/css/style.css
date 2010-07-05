@@ -214,6 +214,13 @@ body {
 	height: 43px;
 	width: 710px;
 }
+.main_mid_tdtg_title1 {
+	background-image: url(../image/main_mid_tdtg_bg8.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 43px;
+	width: 710px;
+}
 .main_mid_tdtg_title_button0 {
 	float: left;
 	height: 26px;
@@ -369,6 +376,7 @@ body {
 }
 #main_mid_yhzk {
 	margin-top: 10px;
+	line-height: 150%;
 }
 .main_mid_yhzk_title {
 	background-image: url(../image/main_mid_yhzk_bg1.gif);
@@ -405,9 +413,17 @@ body {
 	border-right-width: 2px;
 	border-right-style: solid;
 	border-right-color: #FFFFFF;	
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;	
 }
 .main_mid_yhzk_td4 {
 	text-align: center;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;	
 }
 #main_mid_help {
 	margin-top: 10px;
