@@ -128,9 +128,9 @@ body {
 	clear: left;
 }
 .main_mid_hot_flash {
-	background-image: url(../image/zy1.gif);
+	/*background-image: url(../image/zy1.gif);
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center top;*/
 	height: 274px;
 	width: 348px;
 	border-right-width: 1px;
@@ -702,3 +702,15 @@ a.webdh:hover {
 	filter: alpha(opacity=70);
 	opacity:0.7;
 }
+
+/*hot*/
+ #hot *{font-size:12px; font-family:Verdana;margin:0;padding:0}   
+ #hot img {border:0px}   
+ #hot {overflow:hidden;margin:0 5px 0 5px;}   
+ #hot_info{position:absolute;margin-top:224px;padding:8px 0 0 20px;height:42px;width:270px;color:#fff;z-index:6;cursor:pointer}   
+ #hot_info b{font-size:14px;display:block}   
+ #hot_bg {position:absolute;background-color:#000;margin-top:224px;height:50px;width:338px;filter: Alpha(Opacity=60);opacity:0.6;z-index:5}   
+ #hot_text {position:absolute;margin:224px 5px 0 288px;height:50px;width:60px;z-index:7}   
+ #hot_text ul {list-style-type:none; width:60px;height:50px;display:block;padding-top:30px;_padding-top:30px;filter: Alpha(Opacity=80);opacity:0.8;}   
+ #hot_text ul li {width:14px;height:14px;float:left;background-color:#000;display:block;color:#FFF;text-align:center;margin:1px;cursor:pointer;font-family:"Courier New";}   
+ #hot_list a{display:block;width:338px;height:274px;position:absolute;overflow:hidden} 
