@@ -1,0 +1,45 @@
+<div id="hot">    
+	<div id="hot_bg"></div>  
+	<div id="hot_info"></div>  
+	<div id="hot_text">  
+		<ul>  
+#foreach( $article in $newList )
+			<li>$velocityCount</li>  
+#end  			
+		</ul>  
+	</div>  
+	<div id="hot_list">
+#foreach( $article in $newList )
+		<a onclick="addVisit('${article.url}','${article.id}')" href="${article.url}" target="_blank">  
+			<img src="${article.imgurl}" width="348" height="274" title="${article.name}" alt="<b>${article.fromName}</b>点击查看详情"/>  
+		</a>
+#end  
+	</div>  
+</div> 
+
+<script type="text/javascript">    
+function hot_init(){   
+	count = $("#hot_list a").size();   
+	$("#hot_list a:not(:first-child)").hide();   
+	$("#hot_info").html($("#hot_list a:first-child").find("img").attr('alt'));   
+	$("#hot_text li:first-child").css({"background":"#fff",'color':'#000'});   
+	$("#hot_info").click(function(){window.open($("#hot_list a:first-child").attr('href'), "_blank")});   
+	$("#hot_text li").click(function() {   
+		var i = $(this).text() - 1;   
+		hot_n = i;   
+		if (i >= count) return;   
+		$("#hot_info").html($("#hot_list a").eq(i).find("img").attr('alt'));   
+		$("#hot_info").unbind().click(function(){window.open($("#hot_list a").eq(i).attr('href'), "_blank")})   
+		$("#hot_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);   
+		$(this).css({"background":"#fff",'color':'#000'}).siblings().css({"background":"#000",'color':'#fff'});   
+	});   
+	hot_t = setInterval("showAuto()", 3000); 
+	$("#hot").hover(function(){clearInterval(hot_t);}, function(){hot_t = setInterval("showAuto()", 3000);});   
+}   
+   
+function showAuto(){   
+	hot_n = hot_n >= (count - 1) ? 0 : hot_n + 1;   
+    $("#hot_text li").eq(hot_n).trigger('click');   
+}
+hot_init();
+</script> 
