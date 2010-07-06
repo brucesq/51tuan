@@ -41,31 +41,34 @@
 </div>
 <div class="main_mid_tdtg_product">
 <div class="main_mid_tdtg_product_dv">
-关于我们<br/>
+<div style="padding-left:20px;padding-right:20px;padding-top:10px;padding-bottom:10px;">
+<h1>关于我们</h1>
 <hr/>
-百团 = 高端团购<br/>
-百团 = 放心团购<br/>
-百团 = 一眼挑选你所要的团购<br/>
+百团 = 高端团购<br/><br/>
+百团 = 放心团购<br/><br/>
+百团 = 一眼挑选你所要的团购<br/><br/>
 百团网是一家高端放心团购搜索引擎。每天跟踪中国数百个团购网站，及时更新各大团购网站动态，第一时间发布最新团购信息。
-<br/>
-百团网讯科技(北京)有限公司<br/>
-www.100grouper.com	<br/><br/>
-联系我们<br/>
-<hr/>
-如果您有任何意见和建议，请联系我们：
-<br/>
-E-mail：contact@100grouper.com<br/>
-QQ服务：28429091
-<br/>
-广告业务联系：<br/>
-E-mail：ad@100grouper.com
-<br/>
-人才招聘：<br/>
-E-mail：hr@100grouper.com
-<br/>
+<br/><br/>
 百团网讯科技(北京)有限公司<br/>
 www.100grouper.com	
-<br/>
+</div>
+
+<div style="padding-left:20px;padding-right:20px;padding-top:10px;padding-bottom:10px;">
+<h1>联系我们</h1>
+<hr/>
+如果您有任何意见和建议，请联系我们：
+<br/><br/>
+E-mail：contact@100grouper.com
+<br/><br/>
+QQ服务：28429091
+<br/><br/>
+广告业务联系：E-mail：ad@100grouper.com
+<br/><br/>
+人才招聘：E-mail：hr@100grouper.com
+<br/><br/>
+百团网讯科技(北京)有限公司<br/>
+www.100grouper.com	
+</div>
 
 </div>
 </div>
@@ -86,17 +89,17 @@ www.100grouper.com
 <div id="main_mid_help">
 <div class="main_mid_help_title"></div>
 <div class="main_mid_help_dv">
-<div class="main_mid_help_tel">15801228444</div>
+<div class="main_mid_help_tel">暂无</div>
 <div class="main_mid_help_wz">
 <b>用户帮助</b><br />
-<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;如何成为VIP会员？<br />
-<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;怎样赚取VIP会员佣金？
+<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;如何成为会员？<br />
+<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;会员有何好处？
 </div>
 <div class="main_mid_help_QQ">28429091</div>
 <div class="main_mid_help_wz">
 <b>网站帮助</b><br />
-<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;怎样能快速选中高性价比商品？<br />
-<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;怎样能让沙袋王变成水泥王？
+<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;怎样能快速选到高性价比商品？<br />
+<img src="image/main_mid_help_bg4.gif" />&nbsp;&nbsp;怎样能搜索到最合自己心意的商品？
 </div>
 </div>
 <div class="main_mid_webdh_bottom"></div>
