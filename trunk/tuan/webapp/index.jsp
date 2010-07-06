@@ -15,6 +15,7 @@
 <script type="text/javascript" src="js/boxOver.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/swfobject_source.js"></script>	
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 
 <div id="main_mid_hot">
 <div class="main_mid_hot_title"></div>
-<div class="main_mid_hot_flash"></div>
+<div class="main_mid_hot_flash" id="hotList"></div>
 <div class="main_mid_hot_bottom"></div>
 </div>
 
@@ -153,7 +154,7 @@
 
 <div id="main_mid_yhzk">
 <div class="main_mid_yhzk_title"></div>
-<div class="main_mid_yhzk_table" id="discount">
+<div class="main_mid_yhzk_table" id="discountList">
 </div>
 <div class="main_mid_webdh_bottom"></div>
 </div>
@@ -199,6 +200,7 @@
 </body>
 </html>
 <script type="text/javascript">
+var hot_t = hot_n = count = 0;
 
 $(document).ready(function(){
 	$("#cityList").css("display","block");
@@ -207,8 +209,10 @@ $(document).ready(function(){
 });
 
 function changeCityContent(cid,val){
+	clearInterval(hot_t);
 	$("#center_content").load("ajax/getArticleList?page=1&cityid="+cid);
-	$("#discount").load("ajax/getArticleDiscountList?page=1&cityid="+cid);
+	$("#discountList").load("ajax/getArticleDiscountList?cityid="+cid);
+	$("#hotList").load("ajax/getArticleHotList?cityid="+cid);
 	changeCity(val);
 	switchCategory(2);
 }
@@ -230,5 +234,4 @@ function switchCategory(val){
 		$("#top_content").hide();		
 	}	
 }
-
 </script>
