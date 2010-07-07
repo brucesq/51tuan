@@ -36,9 +36,6 @@ public class GetArticleDiscountListAction extends BaseAction{
 	@Override
 	public Map<String, Object> action(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		List<HibernateExpression> ex = new ArrayList<HibernateExpression>();
-		ex.add(new CompareExpression("endTime",new Date(),CompareType.Ge));
-		List<Article> newList = null;
 		Integer cid = 1;
 		String cityId = request.getParameter("cityid");
 		if(StringUtils.isNotEmpty(cityId)){
@@ -46,8 +43,12 @@ public class GetArticleDiscountListAction extends BaseAction{
 		}else{
 			cid = getCityId(request);
 		}
-		ex.add(new CompareExpression("cityId",cid,CompareType.Equal));
-		newList = spliderService.getArticleList(1,10,"saveMoney",false,ex);
+		List<Object> values = new ArrayList<Object>();
+		String hql = "from Article where endTime >= ? and cityId=? order by  cast(saveMoney as integer) desc";
+		values.add(new Date());
+		values.add(cid);
+		List<Article> newList = spliderService.getArticleListByHql(hql, values
+				.toArray(), 1, 10);
 		
 		Map<String, Object> map = new HashMap<String,Object>(); 
 		map.put("newList", newList);
