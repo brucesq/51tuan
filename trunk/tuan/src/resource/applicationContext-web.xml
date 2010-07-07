@@ -38,7 +38,5 @@
 	
 	<bean id="getArticleDiscountListAction" class="com.tuan.web.action.GetArticleDiscountListAction" />
 	<bean id="getArticleHotListAction" class="com.tuan.web.action.GetArticleHotListAction" />
-	<!-- 
 	<bean id="getArticleRandomAction" class="com.tuan.web.action.GetArticleRandomAction" />
-	 --> 
 </beans>
