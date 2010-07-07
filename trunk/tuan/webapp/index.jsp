@@ -44,8 +44,7 @@
 
 <div id="main_mid_webtj">
 <div class="main_mid_webtj_title"></div>
-<div class="main_mid_webtj_mid">今日团购：仅售35元！原价100元的奥体中心德国啤酒门票（超大高清屏幕观战世界杯1/4决赛+抽奖）
-<br /><img src="image/zy2.jpg" alt="网站推荐" /></div>
+<div class="main_mid_webtj_mid" id="random"></div>
 <div class="main_mid_webtj_bottom"></div>
 </div>
 
@@ -206,6 +205,7 @@ $(document).ready(function(){
 	$("#cityList").css("display","block");
 	changeCityContent(<%= AuthenticationHelper.getCityId(request) %>,'<%= Constants.getCityName(AuthenticationHelper.getCityId(request)) %>');
 	$("#top_content").load("ajax/getArticleList?page=1&type=1");
+	$("#random").load("ajax/getArticleRandom?page=1&type=1");
 });
 
 function changeCityContent(cid,val){
