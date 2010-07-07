@@ -1,4 +1,5 @@
 #foreach( $article in $newList )
+<div title="${article.name}">
 <a onclick="addVisit('${article.url}','${article.id}')" href="${article.url}" target="_blank">
 	#if($article.name.length() > 50)
 ${article.name.substring(1,50)}...
@@ -8,6 +9,7 @@ ${article.name}
 </a>
 <br />
 <a onclick="addVisit('${article.url}','${article.id}')" href="${article.url}" target="_blank">
-<img src="${article.imgurl}" width="325" height="168" alt="网站推荐" style="border:0px;"/>
+<img src="${article.imgurl}" width="325" height="168" alt="${article.name}" style="border:0px;"/>
 </a>
+</div>
 #end
