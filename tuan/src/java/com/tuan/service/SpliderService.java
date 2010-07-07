@@ -19,7 +19,7 @@ public interface SpliderService {
 	public List<SpliderItem> getSpliderItems();
 
 	public void addArticle(Article article);
-	
+
 	public void updateArticle(Article article);
 
 	public List<Article> getArticleList(int pageNo, int pageSize,
@@ -43,8 +43,7 @@ public interface SpliderService {
 	public Article getArticle(Integer id);
 
 	public void editArticle(Article item);
-	
-	public List<Article> getArticleDiscountList(int pageNo, int pageSize,
-			String orderBy, boolean isAsc,
-			Collection<HibernateExpression> expressions);
+
+	public List<Article> getArticleListByHql(String hql, Object[] values,
+			int pageNo, int pageSize);
 }
