@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.tuan.splider.parser;
 
 import java.io.InputStream;
@@ -17,11 +14,7 @@ import com.tuan.domain.Article;
 import com.tuan.splider.ArticleParser;
 import com.tuan.util.IoUtils;
 
-/**
- * @author sunquanzhi
- * 
- */
-public class XituanParser implements ArticleParser {
+public class Tuan321Parser  implements ArticleParser {
 
 	public Article parse(String htmlurl, Integer cityId, Integer fromId)
 			throws Exception {
@@ -56,45 +49,43 @@ public class XituanParser implements ArticleParser {
 	}
 
 	public static void parserContent(String content, Article article) {
-		int index = content.indexOf("id=\"deal-intro\"");
+		int index = content.indexOf("id=\"todaycontent\"");
 		if (index > 0) {
-			content = content.substring(index + 18);
-			index = content.indexOf("</a>");
+			content = content.substring(index + 16);
+			index = content.indexOf("<h2>");
 
 			if (index >= 0) {
 				content = content.substring(index + 4);
 
-				index = content.indexOf("</h1>");
+				index = content.indexOf("</h2>");
 				String title = content.substring(0, index);
 //				System.out.println(title);
 				article.setName(title);
 			}
 
 		}
-		index = content.indexOf("class=\"deal-price\"");
+		index = content.indexOf("class=\"groupbuy\"");
 		if (index > 0) {
-			content = content.substring(index + 18);
-			index = content.indexOf("<strong>");
+			content = content.substring(index + 16);
+			index = content.indexOf("<span>");
 			if (index > 0) {
-				content = content.substring(index + 8);
-				index = content.indexOf("</strong>");
+				content = content.substring(index + 6);
+				index = content.indexOf("</span>");
 				String nowPrice = content.substring(0, index);
-				content = content.substring(index + 9);
+				content = content.substring(index + 7);
 				nowPrice = getPrice(nowPrice);
 //				System.out.println(nowPrice);
 				article.setNowPrice(nowPrice);
-				index = content.indexOf("class=\"deal-discount\"");
+				index = content.indexOf("class=\"Prefertxt\"");
 				if (index > 0) {
-					content = content.substring(index + 21);
+					content = content.substring(index + 17);
 					index = content.indexOf("</tr>");
 					content = content.substring(index + 5);
 					index = content.indexOf("<td>");
 					if (index > 0) {
 
 						content = content.substring(index + 4);
-						index = content.indexOf(">");
-						content = content.substring(index + 1);
-						index = content.indexOf("</span>");
+						index = content.indexOf("</td>");
 						String oldPrice = content.substring(0, index);
 						oldPrice = getPrice(oldPrice);
 //						System.out.println(oldPrice);
@@ -121,9 +112,9 @@ public class XituanParser implements ArticleParser {
 						article.setSaveMoney(saveMoney);
 
 					}
-					index = content.indexOf("class=\"deal-buy-cover-img\"");
+					index = content.indexOf("class=\"groupbuypic\"");
 					if (index >= 0) {
-						content = content.substring(index + 26);
+						content = content.substring(index + 19);
 						index = content.indexOf("src=\"");
 						content = content.substring(index + 5);
 						index = content.indexOf("\"");
@@ -139,7 +130,7 @@ public class XituanParser implements ArticleParser {
 	}
 
 	private static String getPrice(String str) {
-		int index = str.indexOf("¥");
+		int index = str.indexOf("￥");
 		if (index >= 0) {
 			str = str.substring(index + 1);
 			String price = "";
@@ -156,8 +147,8 @@ public class XituanParser implements ArticleParser {
 	}
 
 	public static void main(String[] args) throws Exception {
-		XituanParser p = new XituanParser();
-		p.parse("http://www.xituan.com/index.php?ename=bj", 1, 5);
+		Tuan321Parser p = new Tuan321Parser();
+		p.parse("http://www.321tuan.com/tuan/today", 1, 5);
 		//找折网、Yoka优享网、窝窝团、 乐拼、
 	}
 }
