@@ -119,4 +119,6 @@
 
 <bean id="xituanParser" class="com.tuan.splider.parser.XituanParser" />
 
+<bean id="tuan321Parser" class="com.tuan.splider.parser.Tuan321Parser" />
+
 </beans>
