@@ -19,7 +19,7 @@
 <div id="main_bottom_webmess">
 <div class="main_bottom_webmess_left"></div>
 <div class="main_bottom_webmess_wz">
-<a href="aboutme.jsp">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;广告服务&nbsp;&nbsp;|&nbsp;&nbsp;人才招聘&nbsp;&nbsp;|&nbsp;&nbsp;百团社区&nbsp;&nbsp;|&nbsp;&nbsp;商品评价<br />
+<a href="aboutme.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;广告服务&nbsp;&nbsp;|&nbsp;&nbsp;人才招聘&nbsp;&nbsp;|&nbsp;&nbsp;百团社区&nbsp;&nbsp;|&nbsp;&nbsp;商品评价<br />
 Copyright&copy;2010-2099  www.100grouper.com 百团网 版权所有 京ICP备 暂无<br />
 地址：暂无&nbsp;&nbsp;&nbsp;&nbsp;电话：暂无
 </div>
