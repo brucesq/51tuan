@@ -37,7 +37,7 @@ public class AddUserAction implements AjaxAction {
 		user.setLoginId(request.getParameter("loginid"));
 		user.setName(request.getParameter("name"));
 		user.setPassword(request.getParameter("password"));
-		user.setCreateTime(new Date());
+		//user.setCreateTime(new Date());
 		user.setStatus(1);
 		userService.addUser(user);
 		response.setContentType(AjaxServlet.JSON_CONTENT_TYPE);
