@@ -99,7 +99,7 @@
   密码： 
   <input type="text" />
 </div>
-<div class="main_mid_login_left_zc"><a href="#" target="_blank" class="login">· 注册</a>&nbsp;&nbsp;&nbsp;<a href="#" target="_blank" class="login">· 重新填写</a></div>
+<div class="main_mid_login_left_zc"><a href="register.html" class="login">· 注册</a>&nbsp;&nbsp;&nbsp;<a href="#" target="_blank" class="login">· 重新填写</a></div>
 </div>
 <div class="main_mid_login_right"></div>
 </div>
