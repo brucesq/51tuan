@@ -70,6 +70,7 @@
 				<value>com.tuan.domain.Article</value>
 				<value>com.tuan.domain.SpliderItem</value>
 				<value>com.tuan.domain.Feedback</value>
+				<value>com.tuan.domain.User</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
