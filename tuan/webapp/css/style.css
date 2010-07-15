@@ -714,3 +714,13 @@ a.webdh:hover {
  #hot_text ul {list-style-type:none; width:60px;height:50px;display:block;padding-top:30px;_padding-top:30px;filter: Alpha(Opacity=80);opacity:0.8;}   
  #hot_text ul li {width:14px;height:14px;float:left;background-color:#000;display:block;color:#FFF;text-align:center;margin:1px;cursor:pointer;font-family:"Courier New";}   
  #hot_list a{display:block;width:338px;height:274px;position:absolute;overflow:hidden} 
+ 
+ /*register*/
+.register_table td{
+ 	height: 55px;
+ 	padding-left: 30px;
+}
+.register_table span{
+ 	padding-left: 50px;
+ 	color: #ff0000;
+}
