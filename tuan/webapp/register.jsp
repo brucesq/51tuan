@@ -133,7 +133,7 @@ function checkForm(){
 }
 
 function addUser(loginid,name,pwd){	
-	var url = "ajax/registerUser";
+	var url = "ajax/addUser";
 	var param = {};
 	param.loginid = loginid;
 	param.name = name;
