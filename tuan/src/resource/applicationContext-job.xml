@@ -70,7 +70,7 @@
 	<bean id="spliderJobTrigger15"
 		class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="spliderJob" />
-		<property name="cronExpression" value="0 10 15 * * ?" />
+		<property name="cronExpression" value="0 07 15 * * ?" />
 	</bean>
 
 
@@ -120,5 +120,7 @@
 <bean id="xituanParser" class="com.tuan.splider.parser.XituanParser" />
 
 <bean id="tuan321Parser" class="com.tuan.splider.parser.Tuan321Parser" />
+
+<bean id="qqtuanParser" class="com.tuan.splider.parser.QqtuanParser" />
 
 </beans>
