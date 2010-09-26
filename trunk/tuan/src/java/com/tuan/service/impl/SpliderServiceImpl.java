@@ -107,7 +107,7 @@ public class SpliderServiceImpl implements SpliderService {
 		controller.update(item);
 	}
 
-	@Override
+	
 	public List<Article> getArticleListByHql(String hql, Object[] values,
 			int pageNo, int pageSize) {
 		return controller.findBy(hql, pageNo, pageSize, values);
